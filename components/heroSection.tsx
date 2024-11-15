@@ -12,7 +12,7 @@ const HeroSection = () => {
             Hello I’m <span className="font-extrabold">Justin Osagie.</span>
           </h1>
           <h2 className="text-4xl font-extrabold dark:text-white md:text-5xl xl:text-6xl">
-            Fullstack <span className="outlined">Developer</span>
+            Fullstack <span className="text-outline">Developer</span>
           </h2>
           <h3 className="text-4xl font-light dark:text-white md:text-5xl xl:text-6xl">
             Based In <span className="font-extrabold">Florida.</span>

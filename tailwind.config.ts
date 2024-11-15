@@ -1,5 +1,6 @@
 import flowbite from "flowbite-react/tailwind";
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -29,9 +30,27 @@ const config: Config = {
       },
     },
   },
-  plugins: [flowbite.plugin()],
+  plugins: [
+    flowbite.plugin(),
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".text-outline": {
+          "-webkit-text-stroke": "1px black", // Set outline stroke color and width
+          color: "#FFFFFF", // Solid color fill for text to prevent transparency issues
+        },
+        ".text-outline-black": {
+          "-webkit-text-stroke": "1px black",
+          color: "#FFFFFF", // Ensures fill is solid white
+        },
+        ".text-outline-white": {
+          "-webkit-text-stroke": "1px white",
+          color: "#000000", // Ensures fill is solid black
+        },
+      });
+    }),
+  ],
   fontFamily: {
-    sans: ["Sora", "sans-serif"], // Use Sora for sans
+    sans: ["Roboto", "sans-serif"], // Use Sora for sans
   },
   fontSize: {
     // Define custom font sizes with line heights and letter spacing as per the typography spec

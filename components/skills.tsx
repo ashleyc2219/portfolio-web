@@ -19,9 +19,9 @@ interface SkillCardProps {
 
 const SkillCard: React.FC<SkillCardProps> = ({ icon, label }) => {
   return (
-    <div className="justify-apart flex transform flex-col items-center rounded-sm border border-gray-800 p-6 transition-transform duration-300 ease-in-out hover:border-transparent hover:bg-gray-900 hover:text-white">
-      <div className="mb-3 text-3xl">{icon}</div>
-      <span className="font-semibold">{label}</span>
+    <div className="flex size-48 flex-col items-center justify-center rounded-md border-2 border-primary-black p-8 transition-all duration-300 ease-in-out hover:bg-primary-black hover:text-primary-white">
+      <div className="mb-3 text-4xl">{icon}</div>
+      <span className="text-lg font-semibold">{label}</span>
     </div>
   );
 };
