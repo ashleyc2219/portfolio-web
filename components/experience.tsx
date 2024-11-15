@@ -27,7 +27,7 @@ const Experience = () => {
             </div>
             <p className="mt-2 text-gray-700 dark:text-gray-300">
               As a Senior Software Engineer at Google, I played a pivotal role
-              in developing innovative solutions for Google's core search
+              in developing innovative solutions for Google&apos;s core search
               algorithms. Collaborating with a dynamic team of engineers, I
               contributed to the enhancement of search accuracy and efficiency,
               optimizing user experiences for millions of users worldwide.
@@ -50,7 +50,7 @@ const Experience = () => {
             <p className="mt-2 text-gray-700 dark:text-gray-300">
               At YouTube, I served as a Software Engineer, focusing on the
               design and implementation of backend systems for the social media
-              giant's dynamic platform. Working on projects that involved
+              giant&apos;s dynamic platform. Working on projects that involved
               large-scale data processing and user engagement features, I
               leveraged my expertise to ensure seamless functionality and
               scalability.
