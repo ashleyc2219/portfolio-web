@@ -1,6 +1,7 @@
 import React from "react";
 
 interface ProjectProps {
+  number: string;
   title: string;
   description: string;
   imageLight: string;
@@ -9,6 +10,7 @@ interface ProjectProps {
 }
 
 const Project: React.FC<ProjectProps> = ({
+  number,
   title,
   description,
   imageLight,
@@ -36,6 +38,9 @@ const Project: React.FC<ProjectProps> = ({
           />
         </div>
         <div className="mt-4 md:mt-0">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
+            {number}
+          </h2>
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             {title}
           </h2>
@@ -69,25 +74,33 @@ const Project: React.FC<ProjectProps> = ({
 const Projects: React.FC = () => {
   return (
     <div>
+      <div className="mb-4 text-center md:mb-8">
+        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
+          My <span className="font-bold">Projects</span>
+        </h2>
+      </div>
       <Project
+        number="01"
         title="Let's create more tools and ideas that bring us together."
         description="Flowbite helps you connect with friends and communities of people who share your interests. Connecting with your friends and family as well as discovering new ones is easy with features like Groups."
-        imageLight="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-        imageDark="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+        imageLight="project1.png"
+        imageDark="project1.png"
         reverse={false}
       />
       <Project
+        number="02"
         title="Build seamless integration experiences with our tools."
         description="Our platform offers developers and businesses the tools needed to integrate seamlessly, enabling global reach and smooth transactions."
-        imageLight="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-        imageDark="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+        imageLight="project2.png"
+        imageDark="project2.png"
         reverse={true}
       />
       <Project
+        number="03"
         title="Empower your team with tools that scale."
         description="Our solution is built to help teams scale efficiently, offering powerful collaboration tools and project management capabilities."
-        imageLight="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg"
-        imageDark="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg"
+        imageLight="project3.png"
+        imageDark="project3.png"
         reverse={false}
       />
     </div>
