@@ -56,7 +56,7 @@ const HeroSection = () => {
         </div>
 
         {/* Image Content */}
-        <div className="order-first flex justify-center lg:order-last lg:col-span-5 lg:mt-0">
+        <div className="order-first flex justify-center pt-12 lg:order-last lg:col-span-5 lg:mt-0">
           <Image
             src="/heroSection/heroImageLarge.svg"
             alt="Evren Shah illustration"
