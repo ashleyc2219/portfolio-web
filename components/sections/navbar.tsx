@@ -63,12 +63,12 @@ const Navbar = () => {
           id="navbar-sticky"
         >
           {/* Links */}
-          <ul className="mt-4 flex flex-col rounded-lg  bg-primary-white p-4 font-medium rtl:space-x-reverse">
+          <ul className="mt-4 flex flex-col rounded-lg  bg-primary-white p-4 font-medium md:mt-0 md:flex-row md:space-x-6 md:space-y-0 md:border-0 md:bg-white md:p-0 rtl:space-x-reverse">
             <li>
               <a
                 href="#skills"
                 onClick={closeMenu}
-                className="block rounded px-3 py-2 text-primary-black hover:bg-primary-neutral hover:text-primary-white md:p-0"
+                className="block rounded px-3 py-1.5 text-sm text-primary-black hover:bg-primary-neutral hover:text-primary-white md:px-4 md:py-2"
               >
                 Skills
               </a>
@@ -77,7 +77,7 @@ const Navbar = () => {
               <a
                 href="#experience"
                 onClick={closeMenu}
-                className="block rounded px-3 py-2 text-primary-black hover:bg-primary-neutral hover:text-primary-white md:p-0"
+                className="block rounded px-3 py-1.5 text-sm text-primary-black hover:bg-primary-neutral hover:text-primary-white md:px-4 md:py-2"
               >
                 Experience
               </a>
@@ -86,7 +86,7 @@ const Navbar = () => {
               <a
                 href="#about"
                 onClick={closeMenu}
-                className="block rounded px-3 py-2 text-primary-black hover:bg-primary-neutral hover:text-primary-white md:p-0"
+                className="block rounded px-3 py-1.5 text-sm text-primary-black hover:bg-primary-neutral hover:text-primary-white md:px-4 md:py-2"
               >
                 About
               </a>
@@ -95,7 +95,7 @@ const Navbar = () => {
               <a
                 href="#contact"
                 onClick={closeMenu}
-                className="block rounded px-3 py-2 text-primary-black hover:bg-primary-neutral hover:text-primary-white md:p-0"
+                className="block rounded px-3 py-1.5 text-sm text-primary-black hover:bg-primary-neutral hover:text-primary-white md:px-4 md:py-2"
               >
                 Contact
               </a>
