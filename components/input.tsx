@@ -25,10 +25,10 @@ const Input: React.FC<InputProps> = ({
   const stateClass = error
     ? "border-error-500 focus:ring-error-500"
     : disabled
-      ? "border-gray-300 bg-gray-100 text-gray-400 cursor-not-allowed"
-      : "border-primary-black focus:ring-primary-black hover:border-gray-500";
+      ? "border-zinc-300 bg-zinc-100 text-zinc-400 cursor-not-allowed"
+      : "border-primary-black focus:ring-primary-black hover:border-zinc-500";
 
-  const filledClass = value ? "bg-gray-50" : "bg-white";
+  const filledClass = value ? "bg-zinc-50" : "bg-white";
 
   if (type === "textarea") {
     return (

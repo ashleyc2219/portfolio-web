@@ -37,7 +37,7 @@ const ContactSection: React.FC = () => {
             {/* Get In Touch Button */}
             <button
               type="button"
-              className="w-full rounded-md bg-primary-black px-5 py-3 text-sm font-medium text-primary-white transition hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-primary-black md:w-auto"
+              className="w-full rounded-md bg-primary-black px-5 py-3 text-sm font-medium text-primary-white transition hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-primary-black md:w-auto"
             >
               Get In Touch
             </button>

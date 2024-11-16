@@ -18,7 +18,7 @@ const AboutSection = () => {
 
         {/* Text Content */}
         <div className="order-last text-center lg:order-none lg:col-span-7 lg:text-left">
-          <h1 className="text-display-medium font-light text-primary-black dark:text-primary-white">
+          <h1 className="text-display-medium font-light text-primary-black">
             About <span className="font-extrabold">Me</span>
           </h1>
           <p className="text-paragraph-p2 mb-6 max-w-2xl font-light text-zinc-500 lg:mb-8">

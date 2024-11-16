@@ -16,10 +16,10 @@ const Button: React.FC<ButtonProps> = ({ size, variant, children }) => {
 
   const variantClass =
     variant === "default"
-      ? "bg-primary-black text-white hover:bg-gray-700 active:bg-gray-800 rounded-md hover:border-primary-neutral hover:bg-primary-neutral hover:text-primary-white"
+      ? "bg-primary-black text-white hover:bg-zinc-700 active:bg-zinc-800 rounded-md hover:border-primary-neutral hover:bg-primary-neutral hover:text-primary-white"
       : variant === "outline"
         ? "border-2 border-primary-black text-primary-black hover:border-primary-neutral hover:bg-primary-neutral hover:text-primary-white active:bg-primary-neutral" // Thicker border
-        : "bg-gray-900 text-primary-black p-2 rounded-md";
+        : "bg-zinc-900 text-primary-black p-2 rounded-md";
 
   return (
     <button className={`${baseClass} ${sizeClass} ${variantClass}`}>

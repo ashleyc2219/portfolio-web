@@ -9,13 +9,13 @@ const HeroSection = () => {
       id="home"
       className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-white px-4 py-10 md:px-20"
     >
-      <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+      <div className="m-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         {/* Text Content */}
         <div className="mr-auto place-self-center text-left lg:col-span-7">
-          <h1 className="text-display-medium md:text-display-medium xl:text-display-medium font-light text-primary-black dark:text-primary-white">
+          <h1 className="text-display-medium  font-light text-primary-black">
             Hello I’m <span className="font-extrabold">Justin Osagie.</span>
           </h1>
-          <h2 className="text-display-medium md:text-display-medium xl:text-display-medium font-extrabold dark:text-primary-white">
+          <h2 className="text-display-medium font-extrabold text-primary-black">
             <span className="underline decoration-zinc-800 decoration-8">
               A Fullstack
             </span>{" "}
@@ -23,7 +23,7 @@ const HeroSection = () => {
               Developer
             </mark>
           </h2>
-          <h3 className="text-display-medium md:text-display-medium xl:text-display-medium font-light dark:text-primary-white">
+          <h3 className="text-display-medium font-light text-primary-black">
             Based In <span className="font-extrabold">Florida.</span>
           </h3>
 

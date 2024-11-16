@@ -9,7 +9,7 @@ import SkillsSection from "@/components/sections/skillsSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center gap-8 dark:bg-gray-800">
+    <main className="flex min-h-screen flex-col items-center gap-8 dark:bg-zinc-800">
       <Navbar />
       <HeroSection />
       <SkillsSection />

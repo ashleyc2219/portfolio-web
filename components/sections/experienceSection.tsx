@@ -15,23 +15,23 @@ const ExperienceSection = () => {
 
         <div className="space-y-6">
           {/* Experience 1 */}
-          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          <div className="flex flex-col rounded-md border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="mb-2 flex items-center md:mb-0">
+              <div className="mb-4 flex items-center md:mb-0">
                 <img
                   src="/experienceSection/citi.svg"
                   alt="Citi Logo"
                   className="mr-2 size-8 w-auto"
                 />
-                <h3 className="text-xl font-semibold text-primary-white">
+                <h3 className="text-h5 mt-2 font-semibold text-primary-white">
                   Software Developer at Citi
                 </h3>
               </div>
-              <span className="text-sm text-gray-400 md:ml-4 md:text-right">
+              <span className="text-sm text-zinc-300 ">
                 March 2022 – Present
               </span>
             </div>
-            <p className="mt-2 text-zinc-300">
+            <p className="text-paragraph-p3 mt-6 font-medium text-zinc-300">
               As a Software Developer at Citi, I played a key role in designing
               and implementing .NET 6 microservices, enabling seamless token
               management with robust APIs and advanced data handling. My
@@ -46,7 +46,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Experience 2 */}
-          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
                 <img
@@ -54,15 +54,15 @@ const ExperienceSection = () => {
                   alt="Citi Logo"
                   className="mr-2 size-8 w-auto"
                 />
-                <h3 className="text-xl font-semibold text-primary-white">
+                <h3 className="text-h5 mt-2 font-medium text-primary-white">
                   Software Developer Intern at Citi
                 </h3>
               </div>
-              <span className="text-sm text-gray-400 md:ml-4 md:text-right">
+              <span className="text-sm text-zinc-300">
                 June 2021 – August 2021
               </span>
             </div>
-            <p className="mt-2 text-zinc-300">
+            <p className="text-paragraph-p3 mt-6 font-light text-zinc-300">
               During my internship at Citi, I spearheaded the integration of
               Amundsen, an open-source metadata engine, into Citi’s ecosystem,
               connecting it with Neo4j and Elasticsearch. I automated metadata
@@ -75,7 +75,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Experience 3 */}
-          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
                 <img
@@ -83,15 +83,15 @@ const ExperienceSection = () => {
                   alt="FPL Logo"
                   className="mr-2 size-8 w-auto"
                 />
-                <h3 className="text-xl font-semibold text-primary-white">
+                <h3 className="text-h5 mt-2 font-medium text-primary-white">
                   Software Developer Intern at Florida Power & Light
                 </h3>
               </div>
-              <span className="text-sm text-gray-400 md:ml-4 md:text-right">
+              <span className="text-sm text-zinc-300">
                 June 2020 – August 2020
               </span>
             </div>
-            <p className="mt-2 text-zinc-300">
+            <p className="text-paragraph-p3 mt-6 font-light text-zinc-300">
               As an intern at Florida Power & Light, I drove the transition of
               on-premise infrastructure to AWS cloud solutions, scaling the
               customer service call system from 5,000 to over 1,000,000 calls
@@ -104,7 +104,7 @@ const ExperienceSection = () => {
           </div>
 
           {/* Experience 4 */}
-          {/* <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          {/* <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
                 <FaBuilding className="mr-2 text-2xl text-red-400" />
@@ -112,11 +112,11 @@ const ExperienceSection = () => {
                   Freelance Developer
                 </h3>
               </div>
-              <span className="text-sm text-gray-400 md:ml-4 md:text-right">
+              <span className="text-sm text-zinc-400 md:ml-4 md:text-right">
                 Ongoing
               </span>
             </div>
-            <p className="mt-2 text-gray-300 dark:text-gray-300">
+            <p className="mt-2 text-zinc-300 dark:text-zinc-300">
               As a freelance developer, I specialize in building dynamic and
               user-friendly web applications using React, ensuring responsive
               designs that cater to diverse client needs. I have also deployed
