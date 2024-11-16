@@ -1,6 +1,6 @@
 import React from "react";
 
-const Experience = () => {
+const ExperienceSection = () => {
   return (
     <section className="md:py-15 bg-primary-black px-4 py-10 md:px-20">
       <div className="mx-auto max-w-screen-xl px-4">
@@ -15,7 +15,11 @@ const Experience = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <img src="citi.svg" alt="Citi Logo" className="mr-2 size-8" />
+                <img
+                  src="/experienceSection/citi.svg"
+                  alt="Citi Logo"
+                  className="mr-2 size-8"
+                />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer at Citi
                 </h3>
@@ -42,7 +46,11 @@ const Experience = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <img src="citi.svg" alt="Citi Logo" className="mr-2 size-8" />
+                <img
+                  src="/experienceSection/citi.svg"
+                  alt="Citi Logo"
+                  className="mr-2 size-8"
+                />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer Intern at Citi
                 </h3>
@@ -67,7 +75,11 @@ const Experience = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <img src="fpl.svg" alt="FPL Logo" className="mr-2 size-8" />
+                <img
+                  src="/experienceSection/fpl.svg"
+                  alt="FPL Logo"
+                  className="mr-2 size-8"
+                />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer Intern at Florida Power & Light
                 </h3>
@@ -118,4 +130,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default ExperienceSection;

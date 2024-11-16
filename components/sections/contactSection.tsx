@@ -1,7 +1,7 @@
 import React from "react";
 import Input from "./input"; // Assuming Input component is in the same directory
 
-const Contact: React.FC = () => {
+const ContactSection: React.FC = () => {
   return (
     <section className="bg-primary-white px-4 py-16 md:px-20 md:py-24">
       <div className="mx-auto grid max-w-screen-lg gap-8 md:grid-cols-2">
@@ -69,4 +69,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact;
+export default ContactSection;

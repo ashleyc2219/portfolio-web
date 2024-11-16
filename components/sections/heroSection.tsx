@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./button";
+import Button from "../button";
 import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
 

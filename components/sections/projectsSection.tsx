@@ -68,7 +68,7 @@ const Project: React.FC<ProjectProps> = ({
   );
 };
 
-const Projects: React.FC = () => {
+const projectsSection: React.FC = () => {
   return (
     <section className="md:py-15 bg-primary-black px-4 py-10 md:px-20">
       <div className="mb-4 text-center md:mb-8">
@@ -80,8 +80,8 @@ const Projects: React.FC = () => {
         number="01"
         title="Crypto Screener Application"
         description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageLight="project1.png"
-        imageDark="project1.png"
+        imageLight="/projectSection/project1.png"
+        imageDark="/projectSection/project1.png"
         reverse={false}
       />
       <Project
@@ -89,20 +89,20 @@ const Projects: React.FC = () => {
         title="Euphoria - Ecommerce (Apparels) Website Template"
         description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
                     when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageLight="project2.png"
-        imageDark="project2.png"
+        imageLight="/projectSection/project2.png"
+        imageDark="/projectSection/project2.png"
         reverse={true}
       />
       <Project
         number="03"
         title="Blog Website Template"
         description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageLight="project3.png"
-        imageDark="project3.png"
+        imageLight="/projectSection/project3.png"
+        imageDark="/projectSection/project3.png"
         reverse={false}
       />
     </section>
   );
 };
 
-export default Projects;
+export default projectsSection;
