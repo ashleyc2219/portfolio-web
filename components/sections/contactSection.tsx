@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
             user-friendly, impactful, and memorable digital experiences.
           </p>
           <p className="text-h4 font-semibold text-primary-black">
-            osajustin@gmail.com
+            hello@justinosagie.com
           </p>
         </div>
 
