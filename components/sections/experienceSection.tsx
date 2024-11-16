@@ -21,7 +21,7 @@ const ExperienceSection = () => {
                 <img
                   src="/experienceSection/citi.svg"
                   alt="Citi Logo"
-                  className="mr-2 size-8"
+                  className="mr-2 size-8 w-auto"
                 />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer at Citi
@@ -52,7 +52,7 @@ const ExperienceSection = () => {
                 <img
                   src="/experienceSection/citi.svg"
                   alt="Citi Logo"
-                  className="mr-2 size-8"
+                  className="mr-2 size-8 w-auto"
                 />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer Intern at Citi
@@ -81,7 +81,7 @@ const ExperienceSection = () => {
                 <img
                   src="/experienceSection/fpl.svg"
                   alt="FPL Logo"
-                  className="mr-2 size-8"
+                  className="mr-2 size-8 w-auto"
                 />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer Intern at Florida Power & Light
