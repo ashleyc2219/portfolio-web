@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "./button";
 import { IconDownload } from "@tabler/icons-react";
+import Image from "next/image";
 
 const HeroSection = () => {
   return (
@@ -44,10 +45,12 @@ const HeroSection = () => {
 
         {/* Image Content */}
         <div className="order-first flex justify-center lg:order-last lg:col-span-5 lg:mt-0">
-          <img
+          <Image
             src="/heroImageLarge.svg"
             alt="Evren Shah illustration"
             className="size-full object-cover"
+            width={100}
+            height={100}
           />
         </div>
       </div>
