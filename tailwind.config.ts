@@ -28,6 +28,85 @@ const config: Config = {
           500: "#ef4444",
         },
       },
+      fontFamily: {
+        sans: ["Roboto", "sans-serif"], // Default font family
+      },
+      fontSize: {
+        "display-outlined": [
+          "3rem", // 48px -> 3rem
+          { lineHeight: "3.5rem", letterSpacing: "-0.02em" }, // 56px -> 3.5rem
+        ],
+        "display-medium": [
+          "3rem", // 48px -> 3rem
+          { lineHeight: "3.5rem", letterSpacing: "-0.02em" }, // 56px -> 3.5rem
+        ],
+        "outlined-medium": [
+          "1.5rem", // 24px -> 1.5rem
+          { lineHeight: "1.75rem", letterSpacing: "-0.02em" }, // 28px -> 1.75rem
+        ],
+        subheading: [
+          "1.5rem", // 24px -> 1.5rem
+          { lineHeight: "1.75rem", letterSpacing: "-0.02em" }, // 28px -> 1.75rem
+        ],
+        h1: [
+          "2.5rem", // 40px -> 2.5rem
+          { lineHeight: "3rem", letterSpacing: "-0.02em" }, // 48px -> 3rem
+        ],
+        h2: [
+          "2.25rem", // 36px -> 2.25rem
+          { lineHeight: "2.75rem", letterSpacing: "-0.02em" }, // 44px -> 2.75rem
+        ],
+        h3: [
+          "2rem", // 32px -> 2rem
+          { lineHeight: "2.5rem", letterSpacing: "-0.02em" }, // 40px -> 2.5rem
+        ],
+        h4: [
+          "1.75rem", // 28px -> 1.75rem
+          { lineHeight: "2rem", letterSpacing: "-0.02em" }, // 32px -> 2rem
+        ],
+        h5: [
+          "1.5rem", // 24px -> 1.5rem
+          { lineHeight: "1.75rem", letterSpacing: "-0.02em" }, // 28px -> 1.75rem
+        ],
+        h6: [
+          "1.25rem", // 20px -> 1.25rem
+          { lineHeight: "1.5rem", letterSpacing: "-0.02em" }, // 24px -> 1.5rem
+        ],
+        "paragraph-p1": [
+          "1rem", // 16px -> 1rem
+          { lineHeight: "1.25rem", letterSpacing: "-0.02em" }, // 20px -> 1.25rem
+        ],
+        "paragraph-p2": [
+          "1.25rem", // 20px -> 1.25rem
+          { lineHeight: "1.5rem", letterSpacing: "0.02em" }, // 24px -> 1.5rem
+        ],
+        "paragraph-p3": [
+          "1rem", // 16px -> 1rem
+          { lineHeight: "1.25rem", letterSpacing: "0.02em" }, // 20px -> 1.25rem
+        ],
+        "button-text": [
+          "0.75rem", // 12px -> 0.75rem
+          { lineHeight: "1rem", letterSpacing: "0.02em" }, // 16px -> 1rem
+        ],
+        "button-text-2": [
+          "1.25rem", // 20px -> 1.25rem
+          { lineHeight: "1.5rem", letterSpacing: "0.02em" }, // 24px -> 1.5rem
+        ],
+        underlined: [
+          "1rem", // 16px -> 1rem
+          { lineHeight: "1.25rem", letterSpacing: "0.02em" }, // 20px -> 1.25rem
+        ],
+        "custom-20": [
+          "1.25rem", // 20px -> 1.25rem
+          { lineHeight: "1.5rem", letterSpacing: "-0.02em" }, // 24px -> 1.5rem
+        ],
+      },
+      fontWeight: {
+        regular: "400",
+        semibold: "600",
+        bold: "700",
+        extrabold: "800",
+      },
     },
   },
   plugins: [
@@ -49,165 +128,6 @@ const config: Config = {
       });
     }),
   ],
-  fontFamily: {
-    sans: ["Roboto", "sans-serif"], // Use Sora for sans
-  },
-  fontSize: {
-    // Define custom font sizes with line heights and letter spacing as per the typography spec
-    "heading-regular": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em" },
-    ],
-    "heading-semibold": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "heading-bold": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "heading-extrabold": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "subheading-regular": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em" },
-    ],
-    "subheading-semibold": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "subheading-bold": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "subheading-extrabold": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "h1-regular": ["48px", { lineHeight: "56px", letterSpacing: "0.02em" }],
-    "h1-semibold": [
-      "48px",
-      { lineHeight: "56px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "h1-bold": [
-      "48px",
-      { lineHeight: "56px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "h1-extrabold": [
-      "48px",
-      { lineHeight: "56px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "h2-regular": ["40px", { lineHeight: "48px", letterSpacing: "0.02em" }],
-    "h2-semibold": [
-      "40px",
-      { lineHeight: "48px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "h2-bold": [
-      "40px",
-      { lineHeight: "48px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "h2-extrabold": [
-      "40px",
-      { lineHeight: "48px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "h3-regular": ["32px", { lineHeight: "40px", letterSpacing: "0.02em" }],
-    "h3-semibold": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "h3-bold": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "h3-extrabold": [
-      "32px",
-      { lineHeight: "40px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "h4-regular": ["28px", { lineHeight: "36px", letterSpacing: "0.02em" }],
-    "h4-semibold": [
-      "28px",
-      { lineHeight: "36px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "h4-bold": [
-      "28px",
-      { lineHeight: "36px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "h4-extrabold": [
-      "28px",
-      { lineHeight: "36px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "h5-regular": ["24px", { lineHeight: "32px", letterSpacing: "0.02em" }],
-    "h5-semibold": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "h5-bold": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "h5-extrabold": [
-      "24px",
-      { lineHeight: "32px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "paragraph-regular": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em" },
-    ],
-    "paragraph-semibold": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "paragraph-bold": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "paragraph-extrabold": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "small-regular": ["14px", { lineHeight: "20px", letterSpacing: "0.02em" }],
-    "small-semibold": [
-      "14px",
-      { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "small-bold": [
-      "14px",
-      { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "small-extrabold": [
-      "14px",
-      { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-
-    "button-regular": ["16px", { lineHeight: "24px", letterSpacing: "0.02em" }],
-    "button-semibold": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "600" },
-    ],
-    "button-bold": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "700" },
-    ],
-    "button-extrabold": [
-      "16px",
-      { lineHeight: "24px", letterSpacing: "0.02em", fontWeight: "800" },
-    ],
-  },
-  fontWeight: {
-    regular: "400",
-    semibold: "600",
-    bold: "700",
-    extrabold: "800",
-  },
 };
+
 export default config;

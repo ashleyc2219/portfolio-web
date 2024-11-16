@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
 interface ProjectProps {
@@ -49,11 +50,11 @@ const Project: React.FC<ProjectProps> = ({
           </p>
           <a
             href="#"
-            className="bg-primary-700 hover:bg-primary-800 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white focus:ring-4"
+            className="bg-primary-700 focus:ring-primary-300 dark:focus:ring-primary-900 inline-flex items-center rounded-lg px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-primary-black focus:ring-4"
           >
             Get started
             <svg
-              className="-mr-1 ml-2 h-5 w-5"
+              className="-mr-1 ml-2 size-5"
               fill="currentColor"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
@@ -75,9 +76,9 @@ const Projects: React.FC = () => {
   return (
     <div>
       <div className="mb-4 text-center md:mb-8">
-        <h2 className="text-2xl font-semibold text-gray-900 dark:text-white">
-          My <span className="font-bold">Projects</span>
-        </h2>
+        <h1 className="text-display-medium font-regular text-primary-black dark:text-primary-white">
+          My <span className="font-extrabold">Projects</span>
+        </h1>
       </div>
       <Project
         number="01"
