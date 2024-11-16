@@ -2,42 +2,32 @@ import React from "react";
 
 interface InputProps {
   type: "text" | "email" | "textarea";
-  placeholder: string;
+  name: string;
+  placeholder?: string;
+  value: string;
+  onChange: (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => void;
   required?: boolean;
-  error?: boolean; // Add an error state
-  disabled?: boolean; // Add a disabled state
-  value?: string; // For filled state
 }
 
 const Input: React.FC<InputProps> = ({
   type,
+  name,
   placeholder,
-  required,
-  error,
-  disabled,
   value,
+  onChange,
+  required,
 }) => {
-  // Base styling
-  const baseClass =
-    "w-full rounded-md border p-4 text-sm focus:outline-none focus:ring-2 transition-all duration-300";
-
-  // Conditional styling for states
-  const stateClass = error
-    ? "border-error-500 focus:ring-error-500"
-    : disabled
-      ? "border-zinc-300 bg-zinc-100 text-zinc-400 cursor-not-allowed"
-      : "border-primary-black focus:ring-primary-black hover:border-zinc-500";
-
-  const filledClass = value ? "bg-zinc-50" : "bg-white";
-
   if (type === "textarea") {
     return (
       <textarea
+        name={name}
         placeholder={placeholder}
-        required={required}
-        disabled={disabled}
         value={value}
-        className={`${baseClass} ${stateClass} ${filledClass}`}
+        onChange={onChange}
+        required={required}
+        className="w-full rounded-md border border-primary-black p-3 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary-black dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-100 dark:placeholder-zinc-400"
       />
     );
   }
@@ -45,11 +35,12 @@ const Input: React.FC<InputProps> = ({
   return (
     <input
       type={type}
+      name={name}
       placeholder={placeholder}
-      required={required}
-      disabled={disabled}
       value={value}
-      className={`${baseClass} ${stateClass} ${filledClass}`}
+      onChange={onChange}
+      required={required}
+      className="w-full rounded-md border border-primary-black p-3 text-sm text-zinc-900 focus:outline-none focus:ring-2 focus:ring-primary-black dark:border-zinc-600 dark:bg-zinc-700 dark:text-zinc-100 dark:placeholder-zinc-400"
     />
   );
 };
