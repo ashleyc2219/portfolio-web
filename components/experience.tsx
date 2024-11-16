@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGoogle, FaYoutube, FaApple } from "react-icons/fa";
+import { FaBuilding, FaCloud, FaBriefcase } from "react-icons/fa";
 
 const Experience = () => {
   return (
@@ -13,69 +13,104 @@ const Experience = () => {
 
         <div className="space-y-6">
           {/* Experience 1 */}
-          <div className="flex flex-col rounded-lg border-2 border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <FaGoogle className="mr-2 text-2xl text-red-500" />
-                <h3 className="text-xl font-semibold text-primary-white dark:text-primary-white">
-                  Lead Software Engineer at Google
+                <FaBuilding className="mr-2 text-2xl text-blue-500" />
+                <h3 className="text-xl font-semibold text-primary-white">
+                  Software Developer at Citi
                 </h3>
               </div>
               <span className="text-sm text-gray-400 md:ml-4 md:text-right">
-                Nov 2019 – Present
+                March 2022 – Present
               </span>
             </div>
-            <p className="mt-2 text-gray-300 dark:text-gray-300">
-              As a Senior Software Engineer at Google, I played a pivotal role
-              in developing innovative solutions for Google&apos;s core search
-              algorithms. Collaborating with a dynamic team of engineers, I
-              contributed to the enhancement of search accuracy and efficiency,
-              optimizing user experiences for millions of users worldwide.
+            <p className="mt-2 text-zinc-300">
+              As a Software Developer at Citi, I played a key role in designing
+              and implementing .NET 6 microservices, enabling seamless token
+              management with robust APIs and advanced data handling. My
+              contributions to Angular applications brought over 40 new scalable
+              UI features to production, leveraging micro-frontend architecture
+              and AG-Grid. In addition, I automated UI testing workflows with
+              CypressJS, significantly cutting down manual testing efforts. By
+              improving code coverage for a legacy application to 96% through
+              extensive unit testing, I helped enhance code reliability and
+              maintainability across the platform.
             </p>
           </div>
 
           {/* Experience 2 */}
-          <div className="flex flex-col rounded-lg border-2 border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <FaYoutube className="mr-2 text-2xl text-red-600" />
-                <h3 className="text-xl font-semibold text-primary-white dark:text-primary-white">
-                  Software Engineer at YouTube
+                <FaBriefcase className="mr-2 text-2xl text-green-500" />
+                <h3 className="text-xl font-semibold text-primary-white">
+                  Software Developer Intern at Citi
                 </h3>
               </div>
               <span className="text-sm text-gray-400 md:ml-4 md:text-right">
-                Jan 2017 – Oct 2019
+                June 2021 – August 2021
               </span>
             </div>
-            <p className="mt-2 text-gray-300 dark:text-gray-300">
-              At YouTube, I served as a Software Engineer, focusing on the
-              design and implementation of backend systems for the social media
-              giant&apos;s dynamic platform. Working on projects that involved
-              large-scale data processing and user engagement features, I
-              leveraged my expertise to ensure seamless functionality and
-              scalability.
+            <p className="mt-2 text-zinc-300">
+              During my internship at Citi, I spearheaded the integration of
+              Amundsen, an open-source metadata engine, into Citi’s ecosystem,
+              connecting it with Neo4j and Elasticsearch. I automated metadata
+              retrieval processes with over 15 Python scripts using SQLAlchemy,
+              streamlining access to key data sources and eliminating manual
+              intervention. This project highlighted my ability to deliver
+              impactful solutions by bridging innovative tools with existing
+              workflows.
             </p>
           </div>
 
           {/* Experience 3 */}
-          <div className="flex flex-col rounded-lg border-2 border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <FaApple className="mr-2 text-2xl text-gray-800" />
-                <h3 className="text-xl font-semibold text-primary-white dark:text-primary-white">
-                  Junior Software Engineer at Apple
+                <FaCloud className="mr-2 text-2xl text-yellow-500" />
+                <h3 className="text-xl font-semibold text-primary-white">
+                  Software Developer Intern at Florida Power & Light
                 </h3>
               </div>
               <span className="text-sm text-gray-400 md:ml-4 md:text-right">
-                Jan 2016 – Dec 2017
+                June 2020 – August 2020
+              </span>
+            </div>
+            <p className="mt-2 text-zinc-300">
+              As an intern at Florida Power & Light, I drove the transition of
+              on-premise infrastructure to AWS cloud solutions, scaling the
+              customer service call system from 5,000 to over 1,000,000 calls
+              per hour. By developing serverless solutions using Python and
+              Java, I ensured the system could handle peak loads during
+              emergencies with unmatched reliability. My work demonstrated the
+              value of cloud-based scalability and resilience for critical
+              business operations.
+            </p>
+          </div>
+
+          {/* Experience 4 */}
+          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+              <div className="mb-2 flex items-center md:mb-0">
+                <FaBuilding className="mr-2 text-2xl text-red-400" />
+                <h3 className="text-xl font-semibold text-primary-white">
+                  Freelance Developer
+                </h3>
+              </div>
+              <span className="text-sm text-gray-400 md:ml-4 md:text-right">
+                Ongoing
               </span>
             </div>
             <p className="mt-2 text-gray-300 dark:text-gray-300">
-              During my tenure at Apple, I held the role of Software Architect,
-              where I played a key role in shaping the architecture of
-              mission-critical software projects. Responsible for designing
-              scalable and efficient systems, I provided technical leadership to
-              a cross-functional team.
+              As a freelance developer, I specialize in building dynamic and
+              user-friendly web applications using React, ensuring responsive
+              designs that cater to diverse client needs. I have also deployed
+              scalable RESTful APIs using Python and Flask on Google Cloud
+              Platform, combining technical expertise with a focus on
+              performance. From requirements gathering to deployment and
+              maintenance, I’ve delivered end-to-end solutions that drive
+              measurable business impact for small to medium-sized clients.
             </p>
           </div>
         </div>
