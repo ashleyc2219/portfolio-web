@@ -28,10 +28,13 @@ const HeroSection = () => {
           </h3>
 
           <p className="text-paragraph-p2 mt-4 max-w-2xl font-light text-zinc-500 lg:mb-8">
-            I’m Justin Osagie. Lorem Ipsum is simply dummy text of the printing
-            and typesetting industry. Lorem Ipsum has been the industry’s
-            standard dummy text ever since the 1500s, when an unknown printer
-            took a galley of type and scrambled it to make a specimen book.
+            I’m Justin Osagie, a full-stack developer passionate about crafting
+            scalable web applications and robust backend systems. With expertise
+            in React, .NET, and Cloud technologies, I transform complex
+            challenges into elegant solutions. Beyond coding, I enjoy fitness,
+            including weightlifting and running, while often diving into
+            audiobooks or perfecting my cooking skills. Let’s create something
+            extraordinary together!
           </p>
 
           <div className="mt-6 flex space-x-4">

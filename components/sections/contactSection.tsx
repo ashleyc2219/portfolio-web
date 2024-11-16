@@ -19,13 +19,12 @@ const ContactSection: React.FC = () => {
             Something <span className="text-primary-black">special</span>
           </h2>
           <p className="text-paragraph-p2 font-light text-zinc-500">
-            I seek to push the limits of creativity to create high-engaging,
-            user-friendly, and memorable interactive experiences.
+            I strive to combine creativity and technical expertise to build
+            user-friendly, impactful, and memorable digital experiences.
           </p>
-          <div className="text-h3 font-semibold text-primary-black">
-            <p>Yourmail@gmail.com</p>
-            <p>1234567890</p>
-          </div>
+          <p className="text-h3 font-semibold text-primary-black">
+            osajustin@gmail.com
+          </p>
         </div>
 
         {/* Left Section: Form */}
