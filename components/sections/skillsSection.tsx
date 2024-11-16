@@ -46,7 +46,7 @@ const SkillsSection = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-5 md:grid-cols-5 md:gap-16">
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-5 ">
           {/* Each Skill Card with different icons */}
           <SkillCard icon={<FaGitAlt />} label="Git" />
           <SkillCard icon={<SiTypescript />} label="Typescript" />
