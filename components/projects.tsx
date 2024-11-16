@@ -7,7 +7,7 @@ interface ProjectProps {
   description: string;
   imageLight: string;
   imageDark: string;
-  reverse?: boolean; // Optional prop, default to false if not provided
+  reverse?: boolean;
 }
 
 const Project: React.FC<ProjectProps> = ({
@@ -19,7 +19,7 @@ const Project: React.FC<ProjectProps> = ({
   reverse = false,
 }) => {
   return (
-    <section className="md:py-15 bg-primary-white px-4 py-10 md:px-20">
+    <section className="md:py-15 bg-primary-black px-4 py-10 md:px-20">
       <div
         className={`mx-auto max-w-screen-xl items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16 ${
           reverse ? "md:flex-row-reverse" : ""
