@@ -1,5 +1,4 @@
 import React from "react";
-import { FaBuilding, FaCloud, FaBriefcase } from "react-icons/fa";
 
 const Experience = () => {
   return (
@@ -16,7 +15,7 @@ const Experience = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <FaBuilding className="mr-2 text-2xl text-blue-500" />
+                <img src="citi.svg" alt="Citi Logo" className="mr-2 size-8" />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer at Citi
                 </h3>
@@ -43,7 +42,7 @@ const Experience = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <FaBriefcase className="mr-2 text-2xl text-green-500" />
+                <img src="citi.svg" alt="Citi Logo" className="mr-2 size-8" />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer Intern at Citi
                 </h3>
@@ -68,7 +67,7 @@ const Experience = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <FaCloud className="mr-2 text-2xl text-yellow-500" />
+                <img src="fpl.svg" alt="FPL Logo" className="mr-2 size-8" />
                 <h3 className="text-xl font-semibold text-primary-white">
                   Software Developer Intern at Florida Power & Light
                 </h3>
@@ -90,7 +89,7 @@ const Experience = () => {
           </div>
 
           {/* Experience 4 */}
-          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
+          {/* <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-gray-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
                 <FaBuilding className="mr-2 text-2xl text-red-400" />
@@ -112,7 +111,7 @@ const Experience = () => {
               maintenance, I’ve delivered end-to-end solutions that drive
               measurable business impact for small to medium-sized clients.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
