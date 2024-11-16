@@ -128,6 +128,10 @@ const config: Config = {
       });
     }),
   ],
+  corePlugins: {
+    // enable smooth scrolling
+    scrollBehavior: true,
+  },
 };
 
 export default config;

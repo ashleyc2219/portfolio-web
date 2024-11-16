@@ -5,7 +5,10 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className="md:py-15 bg-primary-white px-4 py-10 md:px-20">
+    <section
+      id="home"
+      className="md:py-15 bg-primary-white px-4 py-10 md:px-20"
+    >
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         {/* Text Content */}
         <div className="mr-auto place-self-center text-left lg:col-span-7">

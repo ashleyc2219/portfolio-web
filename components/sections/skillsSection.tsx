@@ -35,7 +35,10 @@ const SkillCard: React.FC<SkillCardProps> = ({ icon, label }) => {
 
 const SkillsSection = () => {
   return (
-    <section className="md:py-15 bg-primary-white px-4 py-10 md:px-20">
+    <section
+      id="skills"
+      className="md:py-15 bg-primary-white px-4 py-10 md:px-20"
+    >
       <div className="mx-auto max-w-screen-xl px-4 py-8">
         <div className="mb-4 text-center md:mb-8">
           <h2 className="text-display-medium font-regular text-primary-black dark:text-primary-white">

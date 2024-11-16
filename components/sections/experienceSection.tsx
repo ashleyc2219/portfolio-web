@@ -2,7 +2,10 @@ import React from "react";
 
 const ExperienceSection = () => {
   return (
-    <section className="md:py-15 bg-primary-black px-4 py-10 md:px-20">
+    <section
+      id="experience"
+      className="md:py-15 bg-primary-black px-4 py-10 md:px-20"
+    >
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mb-8 text-center">
           <h2 className="text-display-medium font-light text-primary-white">

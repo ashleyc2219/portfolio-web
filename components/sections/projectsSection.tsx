@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Button from "./button";
+import Button from "../button";
 
 interface ProjectProps {
   number: string;
@@ -70,7 +70,10 @@ const Project: React.FC<ProjectProps> = ({
 
 const projectsSection: React.FC = () => {
   return (
-    <section className="md:py-15 bg-primary-black px-4 py-10 md:px-20">
+    <section
+      id="projects"
+      className="md:py-15 bg-primary-black px-4 py-10 md:px-20"
+    >
       <div className="mb-4 text-center md:mb-8">
         <h1 className="text-display-medium font-regular text-primary-white">
           My <span className="font-extrabold">Projects</span>
