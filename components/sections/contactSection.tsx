@@ -1,7 +1,55 @@
-import React from "react";
-import Input from "../input"; // Assuming Input component is in the same directory
+"use client";
+
+import React, { useState } from "react";
+import Input from "../input";
 
 const ContactSection: React.FC = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setErrorMessage("");
+    setSuccessMessage("");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setSuccessMessage("Your message has been sent successfully!");
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        const errorData = await response.json();
+        setErrorMessage(
+          errorData.error || "Something went wrong. Please try again.",
+        );
+      }
+    } catch (error) {
+      setErrorMessage("Failed to send your message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section
       id="contact"
@@ -28,20 +76,47 @@ const ContactSection: React.FC = () => {
         </div>
 
         {/* Left Section: Form */}
-        <form className="text-subheading-h6 space-y-6 text-zinc-500">
-          <Input type="text" placeholder="Your name" required />
-          <Input type="email" placeholder="Your email" required />
-          <Input type="textarea" placeholder="How can I help?*" />
+        <form
+          className="text-subheading-h6 space-y-6 text-zinc-500"
+          onSubmit={handleSubmit}
+        >
+          <Input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <Input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <Input
+            type="textarea"
+            name="message"
+            placeholder="How can I help?*"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          />
 
           <div className="flex flex-wrap justify-center gap-4 md:justify-start">
             {/* Get In Touch Button */}
             <button
-              type="button"
+              type="submit"
               className="w-full rounded-md bg-primary-black px-5 py-3 text-sm font-medium text-primary-white transition hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-primary-black md:w-auto"
+              disabled={isSubmitting}
             >
-              Get In Touch
+              {isSubmitting ? "Sending..." : "Get In Touch"}
             </button>
           </div>
+          {successMessage && <p className="text-green-600">{successMessage}</p>}
+          {errorMessage && <p className="text-red-600">{errorMessage}</p>}
         </form>
       </div>
     </section>
