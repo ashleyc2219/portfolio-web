@@ -1,5 +1,5 @@
 import React from "react";
-import Input from "./input"; // Assuming Input component is in the same directory
+import Input from "../input"; // Assuming Input component is in the same directory
 
 const ContactSection: React.FC = () => {
   return (
