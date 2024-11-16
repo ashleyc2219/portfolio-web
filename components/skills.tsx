@@ -35,7 +35,7 @@ const SkillCard: React.FC<SkillCardProps> = ({ icon, label }) => {
 
 const Skills = () => {
   return (
-    <section className="bg-primary-white py-8 dark:bg-primary-black md:py-16">
+    <section className="md:py-15 bg-primary-white px-4 py-10 md:px-20">
       <div className="mx-auto max-w-screen-xl px-4 py-8">
         <div className="mb-4 text-center md:mb-8">
           <h2 className="text-display-medium font-regular text-primary-black dark:text-primary-white">
@@ -43,7 +43,7 @@ const Skills = () => {
           </h2>
         </div>
 
-        <div className="grid grid-cols-2 gap-6 p-4 md:grid-cols-5">
+        <div className="grid grid-cols-2 gap-5 md:grid-cols-5 md:gap-16">
           {/* Each Skill Card with different icons */}
           <SkillCard icon={<FaGitAlt />} label="Git" />
           <SkillCard icon={<SiTypescript />} label="Typescript" />

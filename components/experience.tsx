@@ -3,7 +3,7 @@ import { FaGoogle, FaYoutube, FaApple } from "react-icons/fa";
 
 const Experience = () => {
   return (
-    <section className="bg-primary-black py-8 antialiased md:py-16">
+    <section className="md:py-15 bg-primary-black px-4 py-10 md:px-20">
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mb-8 text-center">
           <h2 className="text-display-medium font-light text-primary-white">
