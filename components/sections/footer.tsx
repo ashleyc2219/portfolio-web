@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import Logo from "../logo";
 
 const Footer: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Footer: React.FC = () => {
           href="#"
           className="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img src="logo/logo1.svg" className="h-8" alt="Flowbite Logo" />
+          <Logo />
         </a>
 
         {/* Copyright */}

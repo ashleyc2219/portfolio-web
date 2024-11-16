@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import Button from "../button";
 import { IconDownload } from "@tabler/icons-react";
+import Logo from "../logo";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -19,7 +20,7 @@ const Navbar = () => {
           className="flex items-center space-x-3 rtl:space-x-reverse"
           onClick={closeMenu}
         >
-          <img src="logo/logo1.svg" className="h-8" alt="Logo" />
+          <Logo />
         </a>
         <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
           {/* Resume Button */}

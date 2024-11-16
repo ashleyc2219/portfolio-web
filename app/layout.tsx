@@ -32,6 +32,10 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <ThemeModeScript />
+        {/* Favicon */}
+        <link rel="icon" href="/logo/jo_logo.svg" sizes="any" />
+        <link rel="icon" href="/logo/jo_logo.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/logo/jo_logo.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           rel="preconnect"

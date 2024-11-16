@@ -9,7 +9,7 @@ const Custom404 = () => {
         Oops! The page you&apos;re looking for doesn&apos;t exist.
       </p>
       <Link href="/">
-        <a className="mt-6 rounded-md bg-primary-black px-6 py-3 text-sm font-medium text-primary-white hover:bg-gray-700 dark:bg-primary-white dark:text-primary-black dark:hover:bg-gray-300">
+        <a className="mt-8 rounded-md bg-primary-black px-6 py-3 text-sm font-medium text-primary-white hover:bg-gray-700 dark:bg-primary-white dark:text-primary-black dark:hover:bg-gray-300">
           Back to Home
         </a>
       </Link>

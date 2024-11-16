@@ -11,7 +11,7 @@ const CustomError = ({ statusCode }: { statusCode?: number }) => {
       </p>
       <a
         href="/"
-        className="mt-6 rounded-md bg-primary-black px-6 py-3 text-sm font-medium text-primary-white hover:bg-gray-700 dark:bg-primary-white dark:text-primary-black dark:hover:bg-gray-300"
+        className="mt-8 rounded-md bg-primary-black px-6 py-3 text-sm font-medium text-primary-white hover:bg-gray-700 dark:bg-primary-white dark:text-primary-black dark:hover:bg-gray-300"
       >
         Back to Home
       </a>
