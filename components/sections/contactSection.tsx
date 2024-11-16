@@ -31,7 +31,6 @@ const ContactSection: React.FC = () => {
         <form className="text-subheading-h6 space-y-6 text-zinc-500">
           <Input type="text" placeholder="Your name" required />
           <Input type="email" placeholder="Your email" required />
-          <Input type="text" placeholder="Your website (If exists)" />
           <Input type="textarea" placeholder="How can I help?*" />
 
           <div className="flex flex-wrap justify-center gap-4 md:justify-start">
