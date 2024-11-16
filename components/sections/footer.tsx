@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Footer: React.FC = () => {
@@ -23,18 +24,18 @@ const Footer: React.FC = () => {
 
         {/* Privacy Policy Link */}
         <div className="mt-2">
-          <a
+          <Link
             href="/privacyPolicy"
             className="mx-3 text-sm text-gray-500 hover:underline dark:text-gray-400"
           >
             Privacy Policy
-          </a>
-          <a
+          </Link>
+          <Link
             href="/termsOfService"
             className="mx-3 text-sm text-gray-500 hover:underline dark:text-gray-400"
           >
             Terms of Service
-          </a>
+          </Link>
         </div>
       </div>
     </footer>

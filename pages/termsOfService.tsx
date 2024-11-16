@@ -40,18 +40,18 @@ const TermsPage: React.FC = () => {
           <ul className="text-paragraph-p2 list-inside list-disc space-y-2 text-gray-700">
             <li>
               <strong>Affiliate:</strong> An entity that controls, is controlled
-              by, or is under common control with a party, where "control" means
-              ownership of 50% or more of shares, equity interest, or other
-              securities entitled to vote for election of directors or other
-              managing authority.
+              by, or is under common control with a party, where
+              &quot;control&quot; means ownership of 50% or more of shares,
+              equity interest, or other securities entitled to vote for election
+              of directors or other managing authority.
             </li>
             <li>
               <strong>Country:</strong> Refers to Florida, United States.
             </li>
             <li>
-              <strong>Company:</strong> Referred to as either "the Company",
-              "We", "Us" or "Our" in this Agreement, refers to Justin Osagie
-              Portfolio.
+              <strong>Company:</strong> Referred to as either &quot;the
+              Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot;
+              in this Agreement, refers to Justin Osagie Portfolio.
             </li>
             <li>
               <strong>Device:</strong> Any device that can access the Service,
