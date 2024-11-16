@@ -29,7 +29,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Roboto", "sans-serif"], // Default font family
+        sans: ["Sora", "sans-serif"], // Default font family
       },
       fontSize: {
         "display-outlined": [
