@@ -20,6 +20,22 @@ const Footer: React.FC = () => {
           </a>
           . All Rights Reserved.
         </span>
+
+        {/* Privacy Policy Link */}
+        <div className="mt-2">
+          <a
+            href="/privacyPolicy"
+            className="mx-3 text-sm text-gray-500 hover:underline dark:text-gray-400"
+          >
+            Privacy Policy
+          </a>
+          <a
+            href="/termsOfService"
+            className="mx-3 text-sm text-gray-500 hover:underline dark:text-gray-400"
+          >
+            Terms of Service
+          </a>
+        </div>
       </div>
     </footer>
   );
