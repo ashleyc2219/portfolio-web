@@ -14,10 +14,15 @@ const Navbar = () => {
         </a>
         <div className="flex space-x-3 md:order-2 md:space-x-0 rtl:space-x-reverse">
           {/* Button */}
-          <Button size={"medium"} variant={"default"}>
-            <span className="mr-2">Resume</span>
-            <IconDownload stroke={2} />
-          </Button>
+          <a
+            href="/resume/resume_Justin_Osagie.pdf"
+            download="Justin-Osagie-Resume.pdf"
+          >
+            <Button size={"medium"} variant={"outline"}>
+              <span className="mr-2">Resume</span>
+              <IconDownload stroke={2} />
+            </Button>
+          </a>
           <button
             data-collapse-toggle="navbar-sticky"
             type="button"

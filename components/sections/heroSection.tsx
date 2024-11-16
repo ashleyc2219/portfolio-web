@@ -39,10 +39,16 @@ const HeroSection = () => {
             <Button size={"medium"} variant={"default"}>
               Contact
             </Button>
-            <Button size={"medium"} variant={"outline"}>
-              <span className="mr-2">Resume</span>
-              <IconDownload stroke={2} />
-            </Button>
+
+            <a
+              href="/resume/resume_Justin_Osagie.pdf"
+              download="Justin-Osagie-Resume.pdf"
+            >
+              <Button size={"medium"} variant={"outline"}>
+                <span className="mr-2">Resume</span>
+                <IconDownload stroke={2} />
+              </Button>
+            </a>
           </div>
         </div>
 
