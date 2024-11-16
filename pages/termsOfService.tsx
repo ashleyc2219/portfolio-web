@@ -117,7 +117,7 @@ const TermsPage: React.FC = () => {
             liability of the Company and any of its suppliers under any
             provision of this Terms and Your exclusive remedy shall be limited
             to the amount actually paid by You through the Service or 100 USD if
-            You haven't purchased anything through the Service.
+            You haven&apos;t purchased anything through the Service.
           </p>
 
           <h2 className="text-display-small font-semibold text-primary-black">
