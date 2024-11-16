@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
           href="#"
           className="flex items-center justify-center text-2xl font-semibold text-gray-900 dark:text-white"
         >
-          <img src="/logo1.svg" className="h-8" alt="Flowbite Logo" />
+          <img src="logo/logo1.svg" className="h-8" alt="Flowbite Logo" />
         </a>
 
         {/* Copyright */}
