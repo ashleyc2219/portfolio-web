@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="md:py-15 bg-primary-white px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-white px-4 py-10 md:px-20"
     >
       <div className="mx-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         {/* Text Content */}

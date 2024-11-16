@@ -4,7 +4,7 @@ const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="md:py-15 bg-primary-black px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-black px-4 py-10 md:px-20"
     >
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mb-8 text-center">

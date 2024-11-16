@@ -11,6 +11,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      spacing: {
+        "navbar-height": "4rem",
+      },
       colors: {
         primary: {
           black: "#000000",
@@ -29,7 +32,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["Sora", "sans-serif"], // Default font family
+        sans: ["Sora", "sans-serif"],
       },
       fontSize: {
         "display-outlined": [
@@ -129,7 +132,6 @@ const config: Config = {
     }),
   ],
   corePlugins: {
-    // enable smooth scrolling
     scrollBehavior: true,
   },
 };

@@ -37,7 +37,7 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="md:py-15 bg-primary-white px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-white px-4 py-10 md:px-20"
     >
       <div className="mx-auto max-w-screen-xl px-4 py-8">
         <div className="mb-4 text-center md:mb-8">

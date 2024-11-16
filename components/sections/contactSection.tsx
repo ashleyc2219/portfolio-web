@@ -5,7 +5,7 @@ const ContactSection: React.FC = () => {
   return (
     <section
       id="contact"
-      className="bg-primary-white px-4 py-16 md:px-20 md:py-24"
+      className="scroll-mt-navbar-height pt-navbar-height bg-primary-white px-4 py-16 md:px-20 md:py-24"
     >
       <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-8 md:grid-cols-2">
         {/* Right Section: Text */}
