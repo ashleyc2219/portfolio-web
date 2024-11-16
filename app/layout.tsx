@@ -5,7 +5,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Justin Osagie Portfolio",
   description:
-    "Welcome to the portfolio of Justin Osagie, a passionate full-stack developer based in Florida. Explore projects, skills, and professional experiences crafted to deliver innovative solutions.",
+    "Portfolio of Justin Osagie, a full-stack developer based in Florida.",
 };
 
 export default function RootLayout({
