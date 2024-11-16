@@ -12,13 +12,18 @@ const HeroSection = () => {
             Hello I’m <span className="font-extrabold">Justin Osagie.</span>
           </h1>
           <h2 className="text-display-medium md:text-display-medium xl:text-display-medium font-extrabold dark:text-primary-white">
-            Fullstack <span className="text-display-outlined">Developer</span>
+            <span className="underline decoration-zinc-800 decoration-8">
+              A Fullstack
+            </span>{" "}
+            <mark className="rounded bg-primary-black px-2 text-primary-white">
+              Developer
+            </mark>
           </h2>
           <h3 className="text-display-medium md:text-display-medium xl:text-display-medium font-light dark:text-primary-white">
             Based In <span className="font-extrabold">Florida.</span>
           </h3>
 
-          <p className="md:text-h2 lg:text-h2 mt-4 max-w-2xl font-light text-zinc-500 dark:text-zinc-500 lg:mb-8">
+          <p className="text-paragraph-p2 mt-4 max-w-2xl font-light text-zinc-500 lg:mb-8">
             I’m Justin Osagie. Lorem Ipsum is simply dummy text of the printing
             and typesetting industry. Lorem Ipsum has been the industry’s
             standard dummy text ever since the 1500s, when an unknown printer
