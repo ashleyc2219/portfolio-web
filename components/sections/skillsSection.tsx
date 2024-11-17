@@ -15,6 +15,7 @@ import {
   SiDotnet,
   SiMongodb,
   SiMicrosoftazure,
+  SiTailwindcss,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiDotnet } from "react-icons/di";
@@ -56,7 +57,7 @@ const SkillsSection = () => {
           <SkillCard icon={<FaReact />} label="React" />
           <SkillCard icon={<BiLogoPostgresql />} label="SQL" />
           <SkillCard icon={<SiCsharp />} label="C#" />
-          <SkillCard icon={<SiMicrosoftazure />} label="Azure" />
+          <SkillCard icon={<SiTailwindcss />} label="Tailwind CSS" />
           <SkillCard icon={<SiMongodb />} label="MongoDB" />
         </div>
       </div>
