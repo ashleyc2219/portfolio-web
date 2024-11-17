@@ -94,6 +94,15 @@ const Navbar = () => {
             </li>
             <li>
               <a
+                href="#projects"
+                onClick={closeMenu}
+                className="block rounded px-3 py-1.5 text-sm text-primary-black hover:bg-primary-neutral hover:text-primary-white md:px-4 md:py-2"
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a
                 href="#contact"
                 onClick={closeMenu}
                 className="block rounded px-3 py-1.5 text-sm text-primary-black hover:bg-primary-neutral hover:text-primary-white md:px-4 md:py-2"
