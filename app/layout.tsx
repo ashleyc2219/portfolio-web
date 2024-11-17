@@ -14,10 +14,10 @@ export const metadata = {
     siteName: "Justin Osagie Portfolio",
     images: [
       {
-        url: "heroSection/heroImageLarge.svg",
+        url: "logo/jo_logo.svg",
         width: 1200,
         height: 630,
-        alt: "Justin Osagie Portfolio Image",
+        alt: "Justin Osagie's Logo",
       },
     ],
   },
