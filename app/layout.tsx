@@ -34,6 +34,8 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <head>
         <ThemeModeScript />
+        <Analytics />
+        <SpeedInsights />
         {/* Favicon */}
         <link rel="icon" href="/logo/jo_logo.svg" sizes="any" />
         <link rel="icon" href="/logo/jo_logo.svg" type="image/svg+xml" />
