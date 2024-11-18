@@ -4,10 +4,17 @@ import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
 
 const HeroSection = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById("contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <section
       id="home"
-      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-white px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20"
     >
       <div className="m-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         {/* Text Content */}
@@ -27,7 +34,7 @@ const HeroSection = () => {
             Based In <span className="font-extrabold">Florida.</span>
           </h3>
 
-          <p className="text-paragraph-p2 mt-4 max-w-2xl font-light text-zinc-500 lg:mb-8">
+          <p className="mt-4 max-w-2xl text-paragraph-p2 font-light text-zinc-500 lg:mb-8">
             I’m Justin Osagie, a full-stack developer passionate about crafting
             scalable web applications and robust backend systems. With expertise
             in React, .NET, and Cloud technologies, I transform complex
@@ -39,7 +46,11 @@ const HeroSection = () => {
 
           <div className="mt-6 flex space-x-4">
             {/* Buttons */}
-            <Button size={"medium"} variant={"default"}>
+            <Button
+              size={"medium"}
+              variant={"default"}
+              onClick={scrollToContact}
+            >
               Contact
             </Button>
 
