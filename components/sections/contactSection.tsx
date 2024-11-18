@@ -10,6 +10,7 @@ const ContactSection: React.FC = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false); // New state for submission tracking
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -37,6 +38,7 @@ const ContactSection: React.FC = () => {
       if (response.ok) {
         setSuccessMessage("Your message has been sent successfully!");
         setFormData({ name: "", email: "", message: "" });
+        setIsSubmitted(true); // Mark as submitted
       } else {
         const errorData = await response.json();
         setErrorMessage(
@@ -110,9 +112,13 @@ const ContactSection: React.FC = () => {
             <button
               type="submit"
               className="w-full rounded-md bg-primary-black px-5 py-3 text-sm font-medium text-primary-white transition hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-primary-black md:w-auto"
-              disabled={isSubmitting}
+              disabled={isSubmitting || isSubmitted} // Disable if submitting or already submitted
             >
-              {isSubmitting ? "Sending..." : "Get In Touch"}
+              {isSubmitting
+                ? "Sending..."
+                : isSubmitted
+                  ? "Sent"
+                  : "Get In Touch"}
             </button>
           </div>
           {successMessage && <p className="text-green-600">{successMessage}</p>}
@@ -124,3 +130,4 @@ const ContactSection: React.FC = () => {
 };
 
 export default ContactSection;
+``;
