@@ -60,14 +60,14 @@ const ContactSection: React.FC = () => {
       <div className="mx-auto grid max-w-screen-lg grid-cols-1 gap-8 md:grid-cols-2">
         {/* Right Section: Text */}
         <div className="space-y-4">
-          <h2 className="text-display-medium font-extrabold text-primary-black">
+          <h1 className="text-display-medium font-extrabold text-primary-black">
             Let&apos;s{" "}
             <mark className="rounded bg-primary-black px-2 text-primary-white">
               talk
             </mark>{" "}
             for <br />
             Something <span className="text-primary-black">special</span>
-          </h2>
+          </h1>
           <p className="text-paragraph-p2 font-light text-zinc-500">
             I strive to combine creativity and technical expertise to build
             user-friendly, impactful, and memorable digital experiences.

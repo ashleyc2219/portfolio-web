@@ -1,16 +1,17 @@
+import Image from "next/image";
 import React from "react";
 
 const ExperienceSection = () => {
   return (
     <section
       id="experience"
-      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-black px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height bg-primary-black px-4 py-10 pt-navbar-height md:px-20"
     >
       <div className="mx-auto max-w-screen-xl px-4">
         <div className="mb-8 text-center">
-          <h2 className="text-display-medium font-light text-primary-white">
+          <h1 className="text-display-medium font-light text-primary-white">
             My <span className="font-extrabold">Experience</span>
-          </h2>
+          </h1>
         </div>
 
         <div className="space-y-6">
@@ -18,20 +19,22 @@ const ExperienceSection = () => {
           <div className="flex flex-col rounded-md border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-4 flex items-center md:mb-0">
-                <img
+                <Image
                   src="/experienceSection/citi.svg"
                   alt="Citi Logo"
                   className="mr-2 size-8 w-auto"
+                  width={2}
+                  height={2}
                 />
-                <h3 className="text-h5 mt-2 font-semibold text-primary-white">
+                <h2 className="mt-2 text-h5 font-semibold text-primary-white">
                   Software Developer at Citi
-                </h3>
+                </h2>
               </div>
               <span className="text-sm text-zinc-300 ">
                 March 2022 – Present
               </span>
             </div>
-            <p className="text-paragraph-p3 mt-6 font-medium text-zinc-300">
+            <p className="mt-6 text-paragraph-p3 font-medium text-zinc-300">
               As a Software Developer at Citi, I played a key role in designing
               and implementing .NET 6 microservices, enabling seamless token
               management with robust APIs and advanced data handling. My
@@ -49,20 +52,22 @@ const ExperienceSection = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <img
+                <Image
                   src="/experienceSection/citi.svg"
                   alt="Citi Logo"
                   className="mr-2 size-8 w-auto"
+                  width={2}
+                  height={2}
                 />
-                <h3 className="text-h5 mt-2 font-medium text-primary-white">
+                <h2 className="mt-2 text-h5 font-medium text-primary-white">
                   Software Developer Intern at Citi
-                </h3>
+                </h2>
               </div>
               <span className="text-sm text-zinc-300">
                 June 2021 – August 2021
               </span>
             </div>
-            <p className="text-paragraph-p3 mt-6 font-light text-zinc-300">
+            <p className="mt-6 text-paragraph-p3 font-light text-zinc-300">
               During my internship at Citi, I spearheaded the integration of
               Amundsen, an open-source metadata engine, into Citi’s ecosystem,
               connecting it with Neo4j and Elasticsearch. I automated metadata
@@ -78,20 +83,22 @@ const ExperienceSection = () => {
           <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="mb-2 flex items-center md:mb-0">
-                <img
+                <Image
                   src="/experienceSection/fpl.svg"
                   alt="FPL Logo"
                   className="mr-2 size-8 w-auto"
+                  width={2}
+                  height={2}
                 />
-                <h3 className="text-h5 mt-2 font-medium text-primary-white">
+                <h2 className="mt-2 text-h5 font-medium text-primary-white">
                   Software Developer Intern at Florida Power & Light
-                </h3>
+                </h2>
               </div>
               <span className="text-sm text-zinc-300">
                 June 2020 – August 2020
               </span>
             </div>
-            <p className="text-paragraph-p3 mt-6 font-light text-zinc-300">
+            <p className="mt-6 text-paragraph-p3 font-light text-zinc-300">
               As an intern at Florida Power & Light, I drove the transition of
               on-premise infrastructure to AWS cloud solutions, scaling the
               customer service call system from 5,000 to over 1,000,000 calls

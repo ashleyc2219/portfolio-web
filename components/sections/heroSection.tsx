@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Button from "../button";
 import { IconDownload } from "@tabler/icons-react";
@@ -49,7 +50,11 @@ const HeroSection = () => {
             <Button
               size={"medium"}
               variant={"default"}
-              onClick={scrollToContact}
+              onClick={() => {
+                document
+                  .getElementById("contact")
+                  ?.scrollIntoView({ behavior: "smooth" });
+              }}
             >
               Contact
             </Button>

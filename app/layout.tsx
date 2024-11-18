@@ -3,6 +3,9 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeModeScript } from "flowbite-react";
 import "./globals.css";
+import { Sora } from "next/font/google";
+
+const sora = Sora({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Justin Osagie Portfolio",
@@ -49,7 +52,7 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className="font-sans">
+      <body className={sora.className}>
         {children}
         <Analytics />
         <SpeedInsights />

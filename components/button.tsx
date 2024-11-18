@@ -1,10 +1,12 @@
+"use client";
+
 import React from "react";
 
 interface ButtonProps {
   size: "small" | "medium";
   variant: "default" | "outline" | "icon";
   children?: React.ReactNode;
-  onClick?: () => void; // Add onClick as an optional prop
+  onClick?: () => void; // Allow the onClick handler
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -13,7 +15,6 @@ const Button: React.FC<ButtonProps> = ({
   children,
   onClick,
 }) => {
-  // Set up classes based on size and variant
   const baseClass =
     "font-semibold rounded transition-all inline-flex items-center";
 
@@ -22,15 +23,15 @@ const Button: React.FC<ButtonProps> = ({
 
   const variantClass =
     variant === "default"
-      ? "bg-primary-black text-white hover:bg-zinc-700 active:bg-zinc-800 rounded-md hover:border-primary-neutral hover:bg-primary-neutral hover:text-primary-white"
+      ? "bg-primary-black text-white hover:bg-zinc-700 active:bg-zinc-800"
       : variant === "outline"
-        ? "border-2 border-primary-black text-primary-black hover:border-primary-neutral hover:bg-primary-neutral hover:text-primary-white active:bg-primary-neutral"
+        ? "border-2 border-primary-black text-primary-black hover:border-primary-neutral hover:bg-primary-neutral hover:text-primary-white"
         : "bg-zinc-900 text-primary-black p-2 rounded-md";
 
   return (
     <button
       className={`${baseClass} ${sizeClass} ${variantClass}`}
-      onClick={onClick} // Pass the onClick prop to the button
+      onClick={onClick} // Use the passed onClick handler
     >
       {children}
     </button>

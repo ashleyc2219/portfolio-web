@@ -1,6 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
-import Button from "../button";
+import Image from "next/image";
 
 interface ProjectProps {
   number: string;
@@ -30,15 +29,19 @@ const Project: React.FC<ProjectProps> = ({
       >
         {/* Conditionally rendered image on the left or right based on "reverse" prop */}
         <div className={`${reverse ? "order-last" : ""} flex`}>
-          <img
-            className="w-full dark:hidden"
+          <Image
+            className="hidden w-full dark:block"
             src={imageLight}
             alt="project image"
+            width={1100}
+            height={900}
           />
-          <img
-            className="hidden w-full dark:block"
+          <Image
+            className=" w-full dark:block"
             src={imageDark}
             alt="project image"
+            width={1100}
+            height={900}
           />
         </div>
         <div className="my-4 md:mt-0">
@@ -55,10 +58,12 @@ const Project: React.FC<ProjectProps> = ({
             type="button"
             className="inline-flex items-center p-1 text-center text-xs"
           >
-            <img
+            <Image
               className="size-5 bg-transparent"
-              src="linkWhite.svg"
+              src="/button/linkWhite.svg"
               alt="Link Icon"
+              width={2}
+              height={2}
             />
             <span className="sr-only">Link</span>
           </a>
@@ -72,7 +77,7 @@ const projectsSection: React.FC = () => {
   return (
     <section
       id="projects"
-      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-black px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height bg-primary-black px-4 py-10 pt-navbar-height md:px-20"
     >
       <div className="mb-4 text-center md:mb-8">
         <h1 className="text-display-medium font-regular text-primary-white">

@@ -1,20 +1,9 @@
 import React from "react";
-import {
-  FaLaptop,
-  FaAngular,
-  FaReact,
-  FaHeadphones,
-  FaPrint,
-  FaKeyboard,
-  FaPython,
-  FaGitAlt,
-} from "react-icons/fa";
+import { FaAngular, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
 import {
   SiTypescript,
   SiCsharp,
-  SiDotnet,
   SiMongodb,
-  SiMicrosoftazure,
   SiTailwindcss,
 } from "react-icons/si";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -38,13 +27,13 @@ const SkillsSection = () => {
   return (
     <section
       id="skills"
-      className="md:py-15 scroll-mt-navbar-height pt-navbar-height bg-primary-white px-4 py-10 md:px-20"
+      className="md:py-15 scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20"
     >
       <div className="mx-auto max-w-screen-xl px-4 py-8">
         <div className="mb-4 text-center md:mb-8">
-          <h2 className="text-display-medium font-regular text-primary-black dark:text-primary-white">
+          <h1 className="text-display-medium font-regular text-primary-black dark:text-primary-white">
             My <span className="font-extrabold">Skills</span>
-          </h2>
+          </h1>
         </div>
 
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5 ">
