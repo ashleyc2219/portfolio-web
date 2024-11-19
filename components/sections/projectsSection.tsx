@@ -37,7 +37,7 @@ const Project: React.FC<ProjectProps> = ({
             height={900}
           />
           <Image
-            className=" w-full dark:block"
+            className=" w-full rounded-lg dark:block"
             src={imageDark}
             alt="project image"
             width={1100}
@@ -57,6 +57,7 @@ const Project: React.FC<ProjectProps> = ({
           <a
             type="button"
             className="inline-flex items-center p-1 text-center text-xs"
+            href={link}
           >
             <Image
               className="size-5 bg-transparent"
@@ -87,7 +88,7 @@ const projectsSection: React.FC = () => {
       <Project
         number="01"
         title="JO's Cloud Services"
-        description="A landing page for JO's Cloud Security. A cloud based, construction focused MSP."
+        description="JO’s Cloud Security is a cutting-edge Managed Service Provider (MSP) designed specifically for the construction industry. This cloud-based solution helps construction companies enhance productivity, secure sensitive data, and streamline their operations. By leveraging advanced cybersecurity and scalable cloud technologies, JO’s Cloud Security ensures teams can collaborate seamlessly across job sites. "
         imageLight="/projectSection/josCloudProject.png"
         imageDark="/projectSection/josCloudProject.png"
         reverse={false}
