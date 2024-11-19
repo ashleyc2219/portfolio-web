@@ -86,11 +86,12 @@ const projectsSection: React.FC = () => {
       </div>
       <Project
         number="01"
-        title="Crypto Screener Application"
-        description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageLight="/projectSection/project1.png"
-        imageDark="/projectSection/project1.png"
+        title="JO's Cloud Services"
+        description="A landing page for JO's Cloud Security. A cloud based, construction focused MSP."
+        imageLight="/projectSection/josCloudProject.png"
+        imageDark="/projectSection/josCloudProject.png"
         reverse={false}
+        link="https://joscloudsecurity.vercel.app/"
       />
       <Project
         number="02"
