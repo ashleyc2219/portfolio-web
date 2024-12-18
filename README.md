@@ -47,28 +47,18 @@ This template uses configuration files for easy customization. You can modify th
 
 ---
 
-## ✉️ Contact Section
-
-### Important: Update the Contact Section Email
-
-In the Contact Section, make sure to update the email address to your own for receiving messages:
-
-    <a href="mailto:your-email@example.com?subject=Contact&body=Hello,%0D%0A%0D%0AI would like to get in touch!" className="...">
-      Get In Touch
-    </a>
-
-### Metadata Update
+## Metadata Update
 
 To ensure that your website displays your own name and other personalized information, update the metadata in the `app/layout.tsx` file:
 
-    <Head>
-      <title>Your Name's Portfolio</title>
-      <meta name="description" content="Your personal portfolio showcasing your projects and experience." />
-      <meta property="og:title" content="Your Name's Portfolio" />
-      <meta property="og:description" content="Your personal portfolio showcasing your projects and experience." />
-      <meta property="og:image" content="/path-to-your-image.jpg" />
-      <meta property="og:url" content="https://your-portfolio.com" />
-    </Head>
+    `<Head>`
+      `<title>`Your Name's Portfolio `</title>`
+      `<meta name="description" content="Your personal portfolio showcasing your projects and experience." />`
+      `<meta property="og:title" content="Your Name's Portfolio" />`
+      `<meta property="og:description" content="Your personal portfolio showcasing your projects and experience." />`
+      `<meta property="og:image" content="/path-to-your-image.jpg" />`
+      `<meta property="og:url" content="https://your-portfolio.com" />`
+    `</Head>`
 
 ---
 
