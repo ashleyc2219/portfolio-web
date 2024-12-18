@@ -18,26 +18,10 @@ const Footer: React.FC = () => {
         <span className="text-sm text-gray-500 dark:text-gray-400 sm:text-center">
           © 2024{" "}
           <a href="#" className="hover:underline">
-            Justin Osagie
+            Example Template
           </a>
           . All Rights Reserved.
         </span>
-
-        {/* Privacy Policy Link */}
-        <div className="mt-2">
-          <Link
-            href="/privacyPolicy"
-            className="mx-3 text-sm text-gray-500 hover:underline dark:text-gray-400"
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            href="/termsOfService"
-            className="mx-3 text-sm text-gray-500 hover:underline dark:text-gray-400"
-          >
-            Terms of Service
-          </Link>
-        </div>
       </div>
     </footer>
   );

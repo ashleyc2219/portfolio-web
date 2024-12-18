@@ -1,8 +1,10 @@
 "use client";
+
 import React from "react";
 import Button from "../button";
 import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
+import { heroConfig } from "../../config/heroConfig";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -12,6 +14,8 @@ const HeroSection = () => {
     }
   };
 
+  const { hero } = heroConfig;
+
   return (
     <section
       id="home"
@@ -20,29 +24,23 @@ const HeroSection = () => {
       <div className="m-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
         {/* Text Content */}
         <div className="mr-auto place-self-center text-left lg:col-span-7">
-          <h1 className="text-display-medium  font-light text-primary-black">
-            Hello I’m <span className="font-extrabold">Justin Osagie.</span>
+          <h1 className="text-display-medium font-light text-primary-black">
+            Hello I’m <span className="font-extrabold">{hero.name}.</span>
           </h1>
           <h2 className="text-display-medium font-extrabold text-primary-black">
             <span className="underline decoration-zinc-800 decoration-8">
-              A Fullstack
+              {hero.primaryRole}
             </span>{" "}
             <mark className="rounded bg-primary-black px-2 text-primary-white">
-              Developer
+              {hero.secondaryRole}
             </mark>
           </h2>
           <h3 className="text-display-medium font-light text-primary-black">
-            Based In <span className="font-extrabold">Florida.</span>
+            Based In <span className="font-extrabold">{hero.location}.</span>
           </h3>
 
           <p className="mt-4 max-w-2xl text-paragraph-p2 font-light text-zinc-500 lg:mb-8">
-            I’m Justin Osagie, a full-stack developer passionate about crafting
-            scalable web applications and robust backend systems. With expertise
-            in React, .NET, and Cloud technologies, I transform complex
-            challenges into elegant solutions. Beyond coding, I enjoy fitness,
-            including weightlifting and running, while often diving into
-            audiobooks or perfecting my cooking skills. Let’s create something
-            extraordinary together!
+            {hero.description}
           </p>
 
           <div className="mt-6 flex space-x-4">
@@ -50,19 +48,12 @@ const HeroSection = () => {
             <Button
               size={"medium"}
               variant={"default"}
-              onClick={() => {
-                document
-                  .getElementById("contact")
-                  ?.scrollIntoView({ behavior: "smooth" });
-              }}
+              onClick={scrollToContact}
             >
               Contact
             </Button>
 
-            <a
-              href="/resume/resume_Justin_Osagie.pdf"
-              download="Justin-Osagie-Resume.pdf"
-            >
+            <a href={hero.resumeLink} download={`${hero.name}-Resume.pdf`}>
               <Button size={"medium"} variant={"outline"}>
                 <span className="mr-2">Resume</span>
                 <IconDownload stroke={2} />
@@ -74,8 +65,8 @@ const HeroSection = () => {
         {/* Image Content */}
         <div className="order-first flex justify-center pt-12 lg:order-last lg:col-span-5 lg:mt-0">
           <Image
-            src="/heroSection/heroImageLarge.svg"
-            alt="Evren Shah illustration"
+            src={hero.heroImage}
+            alt={`${hero.name} illustration`}
             width={500}
             height={500}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

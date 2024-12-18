@@ -1,27 +1,5 @@
 import React from "react";
-import { FaAngular, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import {
-  SiTypescript,
-  SiCsharp,
-  SiMongodb,
-  SiTailwindcss,
-} from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { DiDotnet } from "react-icons/di";
-
-interface SkillCardProps {
-  icon: React.ReactNode;
-  label: string;
-}
-
-const SkillCard: React.FC<SkillCardProps> = ({ icon, label }) => {
-  return (
-    <div className="flex flex-col items-center justify-center rounded-md border-2 border-primary-black p-8 transition-all duration-300 ease-in-out hover:bg-primary-black hover:text-primary-white">
-      <div className="mb-3 text-[3.5rem]">{icon}</div>
-      <span className="text-h6 font-semibold">{label}</span>
-    </div>
-  );
-};
+import { skillsConfig } from "../../config/skillsConfig";
 
 const SkillsSection = () => {
   return (
@@ -30,24 +8,29 @@ const SkillsSection = () => {
       className="md:py-15 scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20"
     >
       <div className="mx-auto max-w-screen-xl px-4 py-8">
+        {/* Section Title */}
         <div className="mb-4 text-center md:mb-8">
           <h1 className="text-display-medium font-regular text-primary-black dark:text-primary-white">
             My <span className="font-extrabold">Skills</span>
           </h1>
         </div>
 
-        <div className="grid grid-cols-2 gap-8 md:grid-cols-5 ">
-          {/* Each Skill Card with different icons */}
-          <SkillCard icon={<FaGitAlt />} label="Git" />
-          <SkillCard icon={<SiTypescript />} label="Typescript" />
-          <SkillCard icon={<FaPython />} label="Python" />
-          <SkillCard icon={<DiDotnet />} label=".NET" />
-          <SkillCard icon={<FaAngular />} label="Angular" />
-          <SkillCard icon={<FaReact />} label="React" />
-          <SkillCard icon={<BiLogoPostgresql />} label="SQL" />
-          <SkillCard icon={<SiCsharp />} label="C#" />
-          <SkillCard icon={<SiTailwindcss />} label="Tailwind CSS" />
-          <SkillCard icon={<SiMongodb />} label="MongoDB" />
+        {/* Skills Grid */}
+        <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
+          {skillsConfig.map((skill) => {
+            const IconComponent = skill.icon;
+            return (
+              <div
+                key={skill.label}
+                className="group flex flex-col items-center justify-center rounded-md border-2 border-primary-black p-8 transition-transform duration-300 ease-in-out hover:bg-primary-black hover:text-primary-white"
+              >
+                <div className="mb-3 text-[3.5rem] text-current">
+                  <IconComponent aria-hidden="true" />
+                </div>
+                <span className="text-h6 font-semibold">{skill.label}</span>
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

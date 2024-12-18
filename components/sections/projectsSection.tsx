@@ -1,80 +1,11 @@
 import React from "react";
-import Image from "next/image";
+import Project from "../project";
+import {
+  projectsConfig,
+  Project as ProjectType,
+} from "../../config/projectsConfig";
 
-interface ProjectProps {
-  number: string;
-  title: string;
-  description: string;
-  imageLight: string;
-  imageDark: string;
-  reverse?: boolean;
-  link?: string;
-}
-
-const Project: React.FC<ProjectProps> = ({
-  number,
-  title,
-  description,
-  imageLight,
-  imageDark,
-  reverse = false,
-  link = "",
-}) => {
-  return (
-    <div className="">
-      <div
-        className={`mx-auto max-w-screen-xl items-center gap-8 px-4 py-8 sm:py-16 md:grid md:grid-cols-2 lg:px-6 xl:gap-16 ${
-          reverse ? "md:flex-row-reverse" : ""
-        }`}
-      >
-        {/* Conditionally rendered image on the left or right based on "reverse" prop */}
-        <div className={`${reverse ? "order-last" : ""} flex`}>
-          <Image
-            className="hidden w-full dark:block"
-            src={imageLight}
-            alt="project image"
-            width={1100}
-            height={900}
-          />
-          <Image
-            className=" w-full rounded-lg dark:block"
-            src={imageDark}
-            alt="project image"
-            width={1100}
-            height={900}
-          />
-        </div>
-        <div className="my-4 md:mt-0">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-primary-white">
-            {number}
-          </h2>
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-primary-white">
-            {title}
-          </h2>
-          <p className="mb-6 font-light text-zinc-500 md:text-lg">
-            {description}
-          </p>
-          <a
-            type="button"
-            className="inline-flex items-center p-1 text-center text-xs"
-            href={link}
-          >
-            <Image
-              className="size-5 bg-transparent"
-              src="/button/linkWhite.svg"
-              alt="Link Icon"
-              width={2}
-              height={2}
-            />
-            <span className="sr-only">Link</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const projectsSection: React.FC = () => {
+const ProjectsSection: React.FC = () => {
   return (
     <section
       id="projects"
@@ -85,34 +16,20 @@ const projectsSection: React.FC = () => {
           My <span className="font-extrabold">Projects</span>
         </h1>
       </div>
-      <Project
-        number="01"
-        title="JO's Cloud Services"
-        description="JO’s Cloud Security is a cutting-edge Managed Service Provider (MSP) designed specifically for the construction industry. This cloud-based solution helps construction companies enhance productivity, secure sensitive data, and streamline their operations. By leveraging advanced cybersecurity and scalable cloud technologies, JO’s Cloud Security ensures teams can collaborate seamlessly across job sites. "
-        imageLight="/projectSection/josCloudProject.png"
-        imageDark="/projectSection/josCloudProject.png"
-        reverse={false}
-        link="https://joscloudsecurity.vercel.app/"
-      />
-      <Project
-        number="02"
-        title="Euphoria - Ecommerce (Apparels) Website Template"
-        description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book.
-                    when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageLight="/projectSection/project2.png"
-        imageDark="/projectSection/project2.png"
-        reverse={true}
-      />
-      <Project
-        number="03"
-        title="Blog Website Template"
-        description="I'm Evren Shah Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to specimen book."
-        imageLight="/projectSection/project3.png"
-        imageDark="/projectSection/project3.png"
-        reverse={false}
-      />
+      {projectsConfig.map((project: ProjectType) => (
+        <Project
+          key={project.id}
+          number={project.number}
+          title={project.title}
+          description={project.description}
+          imageLight={project.imageLight}
+          imageDark={project.imageDark}
+          reverse={project.reverse}
+          link={project.link}
+        />
+      ))}
     </section>
   );
 };
 
-export default projectsSection;
+export default ProjectsSection;

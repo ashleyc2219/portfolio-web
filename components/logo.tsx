@@ -6,15 +6,15 @@ const Logo: React.FC = () => {
     <div className="flex items-center space-x-3 rtl:space-x-reverse">
       {/* SVG Image */}
       <Image
-        src="logo/jo_logo.svg"
+        src="/logo/jo_logo.svg"
         alt="Logo"
         className="size-8 object-contain"
-        height={2}
-        width={2}
+        height={32}
+        width={32}
       />
       {/* Text */}
       <span className="text-lg font-bold text-zinc-800 dark:text-primary-white">
-        Justin
+        Templato
       </span>
     </div>
   );

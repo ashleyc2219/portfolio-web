@@ -1,139 +1,74 @@
 import Image from "next/image";
 import React from "react";
+import { experienceConfig, Experience } from "../../config/experienceConfig";
 
-const ExperienceSection = () => {
+const ExperienceSection: React.FC = () => {
+  interface ExperienceCardProps {
+    companyLogo: string;
+    companyName: string;
+    role: string;
+    duration: string;
+    description: string;
+  }
+
+  const ExperienceCard: React.FC<ExperienceCardProps> = ({
+    companyLogo,
+    companyName,
+    role,
+    duration,
+    description,
+  }) => {
+    return (
+      <div className="flex flex-col rounded-md border-2 border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+          <div className="mb-4 flex items-center md:mb-0">
+            <Image
+              src={companyLogo}
+              alt={`${companyName} Logo`}
+              className="mr-2 size-8 object-contain"
+              width={32}
+              height={32}
+            />
+            <h2 className="mt-2 text-h5 tracking-wide text-primary-white">
+              <span className="font-semibold">{role} </span>
+              at
+              <span className="font-semibold"> {companyName}</span>
+            </h2>
+          </div>
+          <span className="text-sm text-zinc-300 ">{duration}</span>
+        </div>
+        <p className="mt-6 text-paragraph-p3 font-light text-zinc-300">
+          {description}
+        </p>
+      </div>
+    );
+  };
+
   return (
     <section
       id="experience"
       className="md:py-15 scroll-mt-navbar-height bg-primary-black px-4 py-10 pt-navbar-height md:px-20"
     >
       <div className="mx-auto max-w-screen-xl px-4">
+        {/* Section Title */}
         <div className="mb-8 text-center">
           <h1 className="text-display-medium font-light text-primary-white">
             My <span className="font-extrabold">Experience</span>
           </h1>
         </div>
 
+        {/* Experiences Grid */}
         <div className="space-y-6">
-          {/* Experience 1 */}
-          <div className="flex flex-col rounded-md border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="mb-4 flex items-center md:mb-0">
-                <Image
-                  src="/experienceSection/citi.svg"
-                  alt="Citi Logo"
-                  className="mr-2 size-8 w-auto"
-                  width={2}
-                  height={2}
-                />
-                <h2 className="mt-2 text-h5 font-semibold text-primary-white">
-                  Software Developer at Citi
-                </h2>
-              </div>
-              <span className="text-sm text-zinc-300 ">
-                March 2022 – Present
-              </span>
-            </div>
-            <p className="mt-6 text-paragraph-p3 font-medium text-zinc-300">
-              As a Software Developer at Citi, I played a key role in designing
-              and implementing .NET 6 microservices, enabling seamless token
-              management with robust APIs and advanced data handling. My
-              contributions to Angular applications brought over 40 new scalable
-              UI features to production, leveraging micro-frontend architecture
-              and AG-Grid. In addition, I automated UI testing workflows with
-              CypressJS, significantly cutting down manual testing efforts. By
-              improving code coverage for a legacy application to 96% through
-              extensive unit testing, I helped enhance code reliability and
-              maintainability across the platform.
-            </p>
-          </div>
-
-          {/* Experience 2 */}
-          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="mb-2 flex items-center md:mb-0">
-                <Image
-                  src="/experienceSection/citi.svg"
-                  alt="Citi Logo"
-                  className="mr-2 size-8 w-auto"
-                  width={2}
-                  height={2}
-                />
-                <h2 className="mt-2 text-h5 font-medium text-primary-white">
-                  Software Developer Intern at Citi
-                </h2>
-              </div>
-              <span className="text-sm text-zinc-300">
-                June 2021 – August 2021
-              </span>
-            </div>
-            <p className="mt-6 text-paragraph-p3 font-light text-zinc-300">
-              During my internship at Citi, I spearheaded the integration of
-              Amundsen, an open-source metadata engine, into Citi’s ecosystem,
-              connecting it with Neo4j and Elasticsearch. I automated metadata
-              retrieval processes with over 15 Python scripts using SQLAlchemy,
-              streamlining access to key data sources and eliminating manual
-              intervention. This project highlighted my ability to deliver
-              impactful solutions by bridging innovative tools with existing
-              workflows.
-            </p>
-          </div>
-
-          {/* Experience 3 */}
-          <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-transparent hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="mb-2 flex items-center md:mb-0">
-                <Image
-                  src="/experienceSection/fpl.svg"
-                  alt="FPL Logo"
-                  className="mr-2 size-8 w-auto"
-                  width={2}
-                  height={2}
-                />
-                <h2 className="mt-2 text-h5 font-medium text-primary-white">
-                  Software Developer Intern at Florida Power & Light
-                </h2>
-              </div>
-              <span className="text-sm text-zinc-300">
-                June 2020 – August 2020
-              </span>
-            </div>
-            <p className="mt-6 text-paragraph-p3 font-light text-zinc-300">
-              As an intern at Florida Power & Light, I drove the transition of
-              on-premise infrastructure to AWS cloud solutions, scaling the
-              customer service call system from 5,000 to over 1,000,000 calls
-              per hour. By developing serverless solutions using Python and
-              Java, I ensured the system could handle peak loads during
-              emergencies with unmatched reliability. My work demonstrated the
-              value of cloud-based scalability and resilience for critical
-              business operations.
-            </p>
-          </div>
-
-          {/* Experience 4 */}
-          {/* <div className="flex flex-col rounded-lg border border-primary-white bg-primary-black p-6 shadow-md transition-all duration-300 hover:border-primary-white hover:bg-zinc-800 hover:shadow-lg dark:hover:bg-zinc-800">
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div className="mb-2 flex items-center md:mb-0">
-                <FaBuilding className="mr-2 text-2xl text-red-400" />
-                <h3 className="text-xl font-semibold text-primary-white">
-                  Freelance Developer
-                </h3>
-              </div>
-              <span className="text-sm text-zinc-400 md:ml-4 md:text-right">
-                Ongoing
-              </span>
-            </div>
-            <p className="mt-2 text-zinc-300 dark:text-zinc-300">
-              As a freelance developer, I specialize in building dynamic and
-              user-friendly web applications using React, ensuring responsive
-              designs that cater to diverse client needs. I have also deployed
-              scalable RESTful APIs using Python and Flask on Google Cloud
-              Platform, combining technical expertise with a focus on
-              performance. From requirements gathering to deployment and
-              maintenance, I’ve delivered end-to-end solutions that drive
-              measurable business impact for small to medium-sized clients.
-            </p>
-          </div> */}
+          {experienceConfig.map((experience: Experience) => (
+            <ExperienceCard
+              key={experience.id}
+              companyLogo={experience.companyLogo}
+              companyName={experience.companyName}
+              role={experience.role}
+              duration={experience.duration}
+              description={experience.description}
+            />
+          ))}
         </div>
       </div>
     </section>
