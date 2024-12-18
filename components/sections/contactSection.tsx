@@ -1,6 +1,7 @@
 // src/components/ContactSection.tsx
 
-import React, { useState } from "react";
+import React from "react";
+import { contactConfig } from "../../config/contactConfig"; // Import the config
 
 const ContactSection: React.FC = () => {
   return (
@@ -8,7 +9,7 @@ const ContactSection: React.FC = () => {
       id="contact"
       className="scroll-mt-navbar-height bg-primary-white px-4 py-16 pt-navbar-height md:px-20 md:py-24"
     >
-      <div className="mx-auto  max-w-screen-lg justify-items-center gap-8 text-center ">
+      <div className="mx-auto max-w-screen-lg justify-items-center gap-8 text-center ">
         {/* Right Section: Text */}
         <div className="space-y-4">
           <h1 className="text-display-medium font-extrabold text-primary-black">
@@ -20,14 +21,13 @@ const ContactSection: React.FC = () => {
             Something <span className="text-primary-black">special</span>
           </h1>
           <p className="text-paragraph-p2 font-light text-zinc-500">
-            I strive to combine creativity and technical expertise to build
-            user-friendly, impactful, and memorable digital experiences.
+            {contactConfig.description}
           </p>
           <p className="pb-6 text-h4 font-semibold text-primary-black">
-            example@example.com
+            {contactConfig.email} {/* Display the email from the config */}
           </p>
           <a
-            href="mailto:example@example.com?subject=Contact&body=Hello,%0D%0A%0D%0AI would like to get in touch!"
+            href={`mailto:${contactConfig.email}?subject=Contact&body=Hello,%0D%0A%0D%0AI would like to get in touch!`}
             className="mx-auto mt-10 w-full rounded-md bg-primary-black px-5 py-3 text-sm font-medium text-primary-white transition hover:bg-zinc-700 focus:outline-none focus:ring-2 focus:ring-primary-black md:w-auto"
           >
             Get In Touch

@@ -1,5 +1,3 @@
-// src/config/skillsConfig.js
-
 import { FaAngular, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
 import {
   SiTypescript,
@@ -10,15 +8,6 @@ import {
 import { BiLogoPostgresql } from "react-icons/bi";
 import { DiDotnet } from "react-icons/di";
 
-/**
- * Skills Configuration
- *
- * This configuration file contains an array of skills, each with an icon and label.
- * Icons are imported from the 'react-icons' library.
- *
- * Note: Ensure that 'react-icons' is installed in your project.
- * Install it using: npm install react-icons
- */
 export const skillsConfig = [
   { icon: FaGitAlt, label: "Git" },
   { icon: SiTypescript, label: "Typescript" },

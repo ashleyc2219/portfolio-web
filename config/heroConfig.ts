@@ -1,17 +1,11 @@
 export const heroConfig = {
   hero: {
-    name: "Justin Osagie",
-    primaryRole: "Fullstack",
-    secondaryRole: "Developer",
-    location: "Florida",
-    description: `I’m Justin Osagie, a full-stack developer passionate about crafting
-      scalable web applications and robust backend systems. With expertise
-      in React, .NET, and Cloud technologies, I transform complex
-      challenges into elegant solutions. Beyond coding, I enjoy fitness,
-      including weightlifting and running, while often diving into
-      audiobooks or perfecting my cooking skills. Let’s create something
-      extraordinary together!`,
-    resumeLink: "/resume/resume_Justin_Osagie.pdf",
-    heroImage: "/heroSection/heroImageLarge.svg", // Ensure this path is correct
+    name: "Firstname Lastname", // Replace with your name
+    primaryRole: "Frontend", // Replace with your primary role (e.g., Fullstack, Backend, etc.)
+    secondaryRole: "Developer", // Replace with your secondary role (e.g., UI/UX Designer, Software Engineer, etc.)
+    location: "Location", // Replace with your location (e.g., City, Country)
+    description: `I’m [Your Name], a [Your Primary Role] passionate about crafting scalable web applications and robust backend systems. With expertise in [Technologies], I transform complex challenges into elegant solutions. Beyond coding, I enjoy [Hobbies/Interests]. Let’s create something extraordinary together!`,
+    resumeLink: "/resume/resume_Justin_Osagie.pdf", // Ensure this path is correct or update it
+    heroImage: "/heroSection/heroImageLarge.svg", // use public/heroSection/girl-heroImageLarge.svg for girl image
   },
 };

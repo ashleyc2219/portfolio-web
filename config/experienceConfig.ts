@@ -1,6 +1,6 @@
 export interface Experience {
   id: number;
-  companyLogo: string; // Path relative to the 'public' folder
+  companyLogo: string;
   companyName: string;
   role: string;
   duration: string;
@@ -10,14 +10,11 @@ export interface Experience {
 export const experienceConfig: Experience[] = [
   {
     id: 1,
-    companyLogo: "/experienceSection/citi.svg", // Path relative to the 'public' folder
+    companyLogo: "/experienceSection/citi.svg",
     companyName: "Citibank",
     role: "Software Developer",
     duration: "March 2022 – Present",
-    description: `As a Software Developer at Citibank, I played a key role in developing 50+ Angular UI components, including 15 data-rich AG Grid pages, for 1,000+ daily loan officers, improving data interpretation speed by 25%.
-    I transitioned monolithic Angular applications to a micro front-end architecture, accelerating feature releases by 20% and simplifying code maintenance. Additionally, I optimized frontend data retrieval by splitting API calls into parallel processes, improving filter load times by 60% and enhancing user efficiency in loan processing tasks.
-    I also contributed to server-side rendering and responsive design, reducing page load times by 20% and ensuring a seamless user experience across devices.
-    Authored over 500 unit and integration test scripts to achieve 96% code coverage for UI components, boosting reliability and reducing downtime.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum, urna ut lobortis dapibus, ligula enim aliquam nunc, sit amet tempor ligula erat nec orci. Curabitur consectetur velit ac dui egestas, ut pharetra nunc facilisis. Donec auctor odio eget arcu feugiat, nec feugiat sapien cursus. Suspendisse sit amet magna non urna dapibus ullamcorper ut vitae est. Nulla facilisi. Nulla malesuada odio ut nisl vehicula, a ullamcorper risus blandit. Integer malesuada nunc vitae felis cursus, at pretium urna pretium. Nam ac rhoncus lorem. Fusce condimentum mollis purus, at dapibus lectus varius id.`,
   },
   {
     id: 2,
@@ -25,8 +22,7 @@ export const experienceConfig: Experience[] = [
     companyName: "Citibank",
     role: "Software Developer Intern",
     duration: "June 2021 – August 2021",
-    description: `During my internship at Citibank, I contributed to the integration of Amundsen’s UI using Angular and Flask to align with Citi’s branding, improving visual consistency and user engagement. I collaborated with UX designers to implement responsive layouts, ensuring seamless usability across devices.
-    Additionally, I optimized JavaScript and CSS bundle sizes, cutting initial load times by 20%, which enhanced the onboarding experience for users.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac augue quis est varius volutpat. Curabitur malesuada sit amet orci vitae facilisis. Nulla et dolor ac ligula ullamcorper vestibulum. Quisque sagittis orci eget justo facilisis, sit amet tincidunt tortor malesuada. Aenean sit amet maximus purus. Duis sit amet neque sapien. Integer gravida nisl at ex pharetra, et tincidunt purus rutrum. Nulla aliquet diam sit amet fermentum tincidunt. Nam ullamcorper, sem nec tempus placerat, neque libero bibendum orci, a convallis justo eros vel metus.`,
   },
   {
     id: 3,
@@ -34,8 +30,7 @@ export const experienceConfig: Experience[] = [
     companyName: "Florida Power & Light",
     role: "Software Developer Intern",
     duration: "June 2020 – August 2020",
-    description: `As an intern at Florida Power & Light, I played a pivotal role in transitioning on-premise infrastructure to AWS cloud solutions, which scaled the customer service call system from 5,000 to over 1,000,000 calls per hour. I developed serverless solutions using Python and Java, ensuring peak load reliability during emergencies.
-    My work demonstrated the value of cloud-based scalability and resilience for critical business operations, allowing the company to handle increased traffic efficiently.`,
+    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod elit ut nisl tincidunt, a scelerisque libero interdum. Nam sit amet mollis neque. Nulla facilisi. Curabitur fringilla sapien quis vestibulum convallis. Sed sit amet massa orci. Vivamus consequat, urna eu tincidunt aliquet, ipsum erat lobortis tortor, at varius ante sapien et nunc. Quisque auctor sollicitudin libero, et eleifend ante ultricies et. Vivamus sit amet fermentum felis. Proin malesuada purus non orci egestas, eget consequat elit aliquet.`,
   },
   // Add more experiences as needed
 ];
