@@ -1,10 +1,8 @@
-Portfolio Website Template
-
 # Portfolio Website Template
 
 ![Cover Image](public/readme/cover.png)
 
-Welcome to this **Next.js** portfolio template! This is a customizable and easy-to-use template for showcasing your skills, experience, and projects. Follow the instructions below to get started and make it your own.
+Welcome to this **Next.js** portfolio template! This is a single page application based off of a beautiful illustration based portfolio template. It is a customizable and easy-to-use template for showcasing your skills, experience, and projects. Follow the instructions below to get started and make it your own.
 
 ---
 
@@ -64,4 +62,8 @@ To ensure that your website displays your own name and other personalized inform
 
 ## 📢 Credits
 
-• Illustration-Based Portfolio Website Template by **Jhanvi Shah**
+## Credits
+
+- Template Design: [Figma](https://www.figma.com/community/file/1318529372146880502) by [Jhanvi Shah](https://www.linkedin.com/in/jhanvishah215/)
+- Design Licensed under: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
+- Code Licensed under: [MIT License](https://opensource.org/licenses/MIT)
