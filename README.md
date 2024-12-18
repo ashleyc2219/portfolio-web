@@ -62,8 +62,6 @@ To ensure that your website displays your own name and other personalized inform
 
 ## 📢 Credits
 
-## Credits
-
 - Template Design: [Figma](https://www.figma.com/community/file/1318529372146880502) by [Jhanvi Shah](https://www.linkedin.com/in/jhanvishah215/)
 - Design Licensed under: [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/)
 - Code Licensed under: [MIT License](https://opensource.org/licenses/MIT)
