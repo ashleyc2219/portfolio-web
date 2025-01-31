@@ -1,5 +1,7 @@
+import { IconBrandGithub } from "@tabler/icons-react";
 import Image from "next/image";
 import React from "react";
+import Button from "./button";
 
 interface ProjectProps {
   number: string;
@@ -56,6 +58,20 @@ const Project: React.FC<ProjectProps> = ({
           <p className="mb-6 font-light text-zinc-500 md:text-lg">
             {description}
           </p>
+          <div className="mt-6 flex space-x-4">
+            {/* Buttons */}
+            <a href={link}>
+              <Button size={"medium"} variant={"outline"}>
+                <IconBrandGithub stroke={2} />
+              </Button>
+            </a>
+
+            <a href={link}>
+              <Button size={"medium"} variant={"outline"}>
+                <IconBrandGithub stroke={2} />
+              </Button>
+            </a>
+          </div>
           {link && (
             <a
               type="button"
