@@ -1,10 +1,9 @@
 "use client";
 
-import React from "react";
-import Button from "../button";
 import { IconDownload } from "@tabler/icons-react";
 import Image from "next/image";
 import { heroConfig } from "../../config/heroConfig";
+import Button from "../button";
 
 const HeroSection = () => {
   const scrollToContact = () => {
@@ -21,7 +20,19 @@ const HeroSection = () => {
       id="home"
       className="md:py-15 scroll-mt-navbar-height bg-primary-white px-4 py-10 pt-navbar-height md:px-20"
     >
-      <div className="m-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-0">
+      <div className="m-auto grid max-w-screen-xl px-4 py-8 lg:grid-cols-12 lg:gap-8 lg:py-16 xl:gap-12">
+        {/* Image Content */}
+        <div className="order-last flex justify-center pt-12 lg:order-first lg:col-span-5 lg:mt-0">
+          <Image
+            src={hero.heroImage}
+            alt={`${hero.name} illustration`}
+            width={500}
+            height={500}
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            priority
+            className="size-full object-contain"
+          />
+        </div>
         {/* Text Content */}
         <div className="mr-auto place-self-center text-left lg:col-span-7">
           <h1 className="text-display-medium font-light text-primary-black">
@@ -60,19 +71,6 @@ const HeroSection = () => {
               </Button>
             </a>
           </div>
-        </div>
-
-        {/* Image Content */}
-        <div className="order-first flex justify-center pt-12 lg:order-last lg:col-span-5 lg:mt-0">
-          <Image
-            src={hero.heroImage}
-            alt={`${hero.name} illustration`}
-            width={500}
-            height={500}
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-            priority
-            className="size-full object-cover"
-          />
         </div>
       </div>
     </section>
