@@ -1,22 +1,17 @@
-import { FaAngular, FaReact, FaPython, FaGitAlt } from "react-icons/fa";
-import {
-  SiTypescript,
-  SiCsharp,
-  SiMongodb,
-  SiTailwindcss,
-} from "react-icons/si";
-import { BiLogoPostgresql } from "react-icons/bi";
 import { DiDotnet } from "react-icons/di";
+import { FaDocker, FaGitAlt, FaPython, FaReact } from "react-icons/fa";
+import { SiCsharp, SiCypress, SiMongodb, SiTypescript } from "react-icons/si";
+import { VscAzure } from "react-icons/vsc";
 
 export const skillsConfig = [
-  { icon: FaGitAlt, label: "Git" },
-  { icon: SiTypescript, label: "Typescript" },
-  { icon: FaPython, label: "Python" },
-  { icon: DiDotnet, label: ".NET" },
-  { icon: FaAngular, label: "Angular" },
-  { icon: FaReact, label: "React" },
-  { icon: BiLogoPostgresql, label: "PostgreSQL" },
   { icon: SiCsharp, label: "C#" },
-  { icon: SiTailwindcss, label: "Tailwind CSS" },
+  { icon: DiDotnet, label: ".NET" },
+  { icon: SiTypescript, label: "Typescript" },
+  { icon: FaReact, label: "React" },
+  { icon: FaPython, label: "Python" },
+  { icon: FaGitAlt, label: "Git" },
+  { icon: SiCypress, label: "Cypress" },
+  { icon: VscAzure, label: "Azure" },
+  { icon: FaDocker, label: "Docker" },
   { icon: SiMongodb, label: "MongoDB" },
 ];
